@@ -302,7 +302,7 @@ float : left;
 overflow : hidden;
 max-height : 240px;
 height : auto;
-width : 100%;
+width : auto;
 color : #333;
 text-align : left;
 font-size : 16px;
