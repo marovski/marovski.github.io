@@ -1,0 +1,911 @@
+/*
+    NAME : MAIN STYLESHEET - Megmi 
+    AUTHOR NAME : YossefAzaou
+    AUTHOR WEBSITE : N/A
+    OUR PORTFOLIO : http://themeforest.net/user/yossefazaou/portfolio?ref=yossefazaou
+*/
+
+
+/* ==================================================
+    TABLE OF CONTENT
+   ==================================================
+
+    01.BODY
+    02.TYPOGRAPHY
+    03.HEADER
+    04.ABOUT
+    05.SKILL
+    06.MY RECENT WORKS
+    07.HOW I WORKS
+    08.MY PROJECTS
+    09.CONTACT
+    10.Footer
+    00.RESPONSIVITY SECTION
+
+*/
+
+
+/* ==================================================
+    01. BODY
+================================================== */
+
+body {
+height : 100%;
+}
+.center {
+text-align : center;
+margin : 0 auto;
+margin-right : 70px;
+}
+
+
+/* ==================================================
+    02. TYPOGRAPHY
+================================================== */
+
+.col-md-6 h2 {
+font-size : 84px;
+float : left;
+color : #fff;
+}
+.col-md-6 h3 {
+font-size : 50px;
+float : left;
+font-weight : 100;
+color : #fff;
+margin-bottom : -24px;
+}
+.col-md-8 p {
+font-size : 20px;
+font-weight : 300;
+margin-bottom : 42px;
+opacity : 0.60000002384185791015625;
+color : #fff;
+width : 400px;
+}
+
+/* ==================================================
+    03. HEADER
+================================================== */
+
+
+.logo {
+float: left;
+margin-top : 23px;
+}
+.Welcome-area {
+background : linear-gradient(0deg, rgba(3, 6, 8, 0.63), rgba(3, 6, 8, 0.63)), url(img/background1.png) center center no-repeat;
+background-size : cover;
+height : 700px;
+background-position : 100% 0%;
+}
+.Welcome-text {
+margin-top : 120px;
+}
+#general-social-links {
+float: right;
+z-index: 700;
+margin-top: 42px;
+margin-right: -63px;
+list-style: none;
+width: 173px;
+text-align: justify;
+line-height: .01em;
+padding: 0;
+-webkit-transition: .6s;
+-moz-transition: .6s;
+-ms-transition: .6s;
+-o-transition: .6s;
+transition: .6s;
+}
+#general-social-links li {
+display : inline-block;
+}
+#general-social-links li a {
+text-decoration : none;
+line-height : 23px;
+display : inline-block;
+vertical-align : middle;
+opacity : 0.60000002384185791015625;
+font-size : 18px;
+color : #fff;
+mix-blend-mode : difference;
+transition : 0.6s;
+margin-left : 14px;
+}
+#general-social-links li a p {
+margin : 0;
+}
+#general-social-links li a .fa {
+color : #fff;
+}
+#general-social-links li a:hover {
+opacity : 1;
+}
+.download-cv-icon {
+width : 3.71428571em;
+height : 3.71428571em;
+border-radius : 50%;
+position : relative;
+z-index : 4;
+display : inline-block;
+border : #fff solid 2px;
+cursor : pointer;
+background : #fff;
+}
+i.fa.fa-download {
+padding : 14px 16px 13px;
+font-size : 20px;
+}
+
+/* ==================================================
+    04. ABOUT
+================================================== */
+
+
+.about {
+background : #fff;
+}
+.aboutinfo {
+display : inline-block;
+margin-top : 23px;
+max-width : 50%;
+width : auto;
+}
+.aboutinfo h2 {
+font-size : 40px;
+line-height : 1.05;
+font-weight : 500;
+letter-spacing : 0.008em;
+}
+.aboutinfo h3 {
+font-size : 32px;
+line-height : 1.09375;
+font-weight : 300;
+letter-spacing : 0.011em;
+}
+.aboutinfo p {
+font-style: italic;
+margin : 0 0 10px;
+font-size : 17px;
+line-height : 1.52947;
+font-weight : 400;
+letter-spacing : -0.021em;
+}
+.portrait {
+float : right;
+}
+.portrait a img {
+background-size : cover;
+width : 400px;
+}
+
+/* ==================================================
+    05. Skill
+================================================== */
+
+.services {
+background : #fff;
+}
+.services-content {
+margin-bottom : 40px;
+font-family : roboto;
+}
+.skillbar {
+    position: relative;
+    display: block;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.skillbar-bar:before {
+    background: #eee;
+    content: "";
+    height: 3px;
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+}
+
+.skillbar-bar {
+    height: 3px;
+    width: 0px;
+    background: #323232;
+    transition-property: width, background-color;
+}
+.skillbar-bar1{
+    height: 3px;
+    width: 0px;
+    background: #08c;
+    transition-property: width, background-color;
+}
+.skillbar-bar2{
+    height: 3px;
+    width: 0px;
+    background:#808082;
+    transition-property: width, background-color;
+}
+.skillbar-bar3 {
+    height: 3px;
+    width: 0px;
+    background: #42B32F;
+    transition-property: width, background-color;
+}
+
+.skillbar-title {
+    color: #323232;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+.skill-bar-percent {
+    float: right;
+    display: inline-block;
+    color: #323232;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+/* CENTERING ONLY */
+
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+/* ==================================================
+    06. My Recent Works
+================================================== */
+
+.recentworks {
+background : #fff;
+}
+.section2-title {
+margin-top : 40px;
+}
+.section2-title h2 {
+font-size : 5rem;
+font-weight : 100;
+}
+.lineprojects {
+width : 132px;
+margin-bottom : 50px;
+border-bottom : 2px solid #333;
+}
+.category {
+text-align : center;
+}
+.filter-button {
+font-size : 25px;
+font-weight : 300;
+border : none;
+color : #333;
+margin-bottom : 30px;
+background : transparent;
+margin-top : 60px;
+}
+.filter-button:hover {
+text-decoration : underline;
+}
+.btn-default:active .filter-button:active {
+background-color : #42B32F;
+color : #fff;
+}
+.port-image {
+width : 90%;
+}
+.gallery_product {
+margin-bottom : 30px;
+}
+.snip1403 {
+font-family : roboto;
+float : left;
+overflow : hidden;
+max-height : 240px;
+height : auto;
+width : 100%;
+color : #333;
+text-align : left;
+font-size : 16px;
+background-color : transparent;
+line-height : 1.6em;
+font-weight : 400;
+transform : translateZ(0);
+}
+.snip1403 * {
+box-sizing : border-box;
+transition : all 0.35s linear;
+}
+.snip1403:before, .snip1403:after {
+transition : all 0.35s ease;
+}
+.snip1403 img {
+max-width : 100%;
+vertical-align : top;
+}
+.snip1403 figcaption {
+position : absolute;
+top : 50%;
+margin : 0 40px;
+padding : 10px 15px;
+transform : translate(0%,-50%);
+}
+.snip1403 figcaption div {
+transform : rotate(-90deg);
+position : absolute;
+top : 0;
+bottom : 0;
+left : 0;
+right : 0;
+opacity : 0.699999988079071044921875;
+}
+.snip1403 figcaption div:before, .snip1403 figcaption div:after {
+position : absolute;
+content : '';
+background-color : rgba(255, 255, 255, 0.75);
+left : 50%;
+top : 50%;
+}
+.snip1403 figcaption div:before {
+width : 1px;
+height : 50px;
+transform : translateY(-50%);
+}
+.snip1403 figcaption div:after {
+height : 1px;
+width : 50px;
+transform : translateX(-50%);
+}
+.snip1403 p {
+opacity : 0;
+letter-spacing : 1px;
+margin : 0;
+}
+.snip1403 a {
+position : absolute;
+top : 0;
+bottom : 0;
+left : 0;
+right : 0;
+}
+.snip1403:hover img, .snip1403.hover img {
+opacity : 0.1500000059604644775390625;
+}
+.snip1403:hover figcaption p, .snip1403.hover figcaption p {
+transition-delay : 0.6s;
+opacity : 1;
+}
+.snip1403:hover figcaption .plus1, .snip1403.hover figcaption .plus1, .snip1403:hover figcaption .plus2, .snip1403.hover figcaption .plus2 {
+transform : rotate(0);
+}
+.snip1403:hover figcaption .plus1:before, .snip1403.hover figcaption .plus1:before, .snip1403:hover figcaption .plus1:after, .snip1403.hover figcaption .plus1:after {
+top : 0;
+left : 0;
+transition-delay : 0.35s;
+}
+.snip1403:hover figcaption .plus2:before, .snip1403.hover figcaption .plus2:before, .snip1403:hover figcaption .plus2:after, .snip1403.hover figcaption .plus2:after {
+top : 100%;
+left : 100%;
+transition-delay : 0.35s;
+}
+/* ==================================================
+    07. How i Works
+================================================== */
+
+.how-i-work {
+background : #fff;
+}
+.titlesec {
+font-size : 40px;
+line-height : 1.05;
+font-weight : 500;
+letter-spacing : 0.008em;
+}
+.How-i-work2 {
+display : inline-block;
+margin-left : 100px;
+margin-top : 100px;
+width : 500px;
+z-index : 1;
+float : right;
+}
+.How-i-work2 h2 {
+font-size : 40px;
+line-height : 1.05;
+font-weight : 500;
+letter-spacing : 0.008em;
+}
+.How-i-work2 h3 {
+font-size : 32px;
+line-height : 1.09375;
+font-weight : 300;
+letter-spacing : 0.011em;
+}
+.How-i-work2 h4 {
+margin : 0 0 10px;
+font-size : 17px;
+line-height : 1.52947;
+font-weight : 400;
+letter-spacing : -0.021em;
+}
+.How-i-work2 p {
+margin : 0 0 10px;
+font-size : 17px;
+line-height : 1.52947;
+font-weight : 400;
+letter-spacing : -0.021em;
+}
+.portrait2 {
+margin-top : 90px;
+float : left;
+margin-bottom : 90px;
+}
+.portrait2 a img {
+background-size : cover;
+width : 540px;
+}
+/* ==================================================
+    08. My Projects
+================================================== */
+.projects {
+background : #fff;
+}
+.section1-title {
+margin-top : 40px;
+}
+.section1-title h2 {
+font-size : 5rem;
+font-weight : 100;
+}
+.lineprojects {
+width : 132px;
+margin-bottom : 50px;
+border-bottom : 2px solid #333;
+}
+.corporate-block {
+width : 25%;
+float : left;
+margin-bottom : 40px;
+margin-top : 30px;
+}
+.corporate-block img {
+width : 240px;
+height : 156px;
+}
+.corporate-block h3 {
+font-size : 24px;
+font-weight : 400;
+color : rgb(62, 61, 61);
+text-decoration : none;
+}
+.corporate-block h3:hover {
+text-decoration : none;
+}
+.project-bio {
+width : 90%;
+}
+p.project-bio {
+line-height : 1.35;
+font-size : 15px;
+font-weight : 200;
+color : #000;
+}
+p.project-bio:hover {
+text-decoration : none;
+}
+.corporate-block span {
+color : #08c !important ;
+font-size : 18px;
+font-weight : 200;
+transition : 0.4s;
+}
+.corporate-block span:hover {
+text-decoration : underline;
+}
+.learnmore {
+margin-top : 8px;
+}
+
+
+
+/* ==================================================
+    09. CONTACT
+================================================== */
+
+.contact {
+background: #2f3033;
+z-index: 0;
+height: 100%;
+margin-top: 40px;
+}
+.textcontact {
+float: left;
+width: 100%;
+margin-top: 54px;
+}
+.textcontact h2 {
+font-size : 50px;
+color : #fff;
+font-weight : 300;
+margin-bottom : 32px;
+}
+.line {
+width : 30px;
+border-bottom : 2px solid #fff;
+margin-bottom : 30px;
+}
+.textcontact p {
+color : #808082;
+font-size : 20px;
+font-weight : 300;
+margin-bottom : 40px;
+}
+.mialeto {
+height: 390px;
+border: #fff solid 4px;
+border-radius: 4px;
+float: right;
+padding-right: 51px;
+margin-top: 54px;
+}
+.infomialeto {
+margin-top : 100px;
+margin-left : 124px;
+}
+.mialeto h4 {
+font-size : 12px;
+font-weight : 700;
+color : #fff;
+text-transform : uppercase;
+letter-spacing : 0.2em;
+margin-bottom : -17px;
+}
+.mialeto h2 {
+font-size : 40px;
+color : #fff;
+font-weight : 200;
+}
+.iconmail {
+margin-left : -69px;
+margin-bottom : -242px;
+}
+.maileto-icon {
+width : 3.714286em;
+height : 3.714286em;
+border-radius : 50%;
+border : #fff solid 2px;
+cursor : pointer;
+background : transparent;
+margin-bottom : 72px;
+}
+i.fa.fa-phone {
+padding : 17px 18px 13px;
+color : #fff;
+}
+i.fa.fa-envelope {
+padding : 17px 18px 13px;
+color : #fff;
+}
+
+/* ==================================================
+    10. Footer
+================================================== */
+.footer {
+height : 80px;
+background : #2f3033;
+z-index : 1;
+}
+.copyright p {
+color : #888;
+font-size : 14px;
+line-height : 6;
+margin : 0;
+text-transform : capitalize;
+}
+#general-social-links-footer {
+float : right;
+z-index : 1;
+margin-top : -54px;
+margin-right : 680px;
+list-style : none;
+width : 173px;
+text-align : justify;
+line-height : 0.01em;
+padding : 0;
+transition : 0.6s;
+}
+#general-social-links-footer li {
+display : inline-block;
+}
+#general-social-links-footer li a {
+text-decoration : none;
+line-height : 23px;
+display : inline-block;
+vertical-align : middle;
+opacity : 0.60000002384185791015625;
+font-size : 18px;
+color : #fff;
+mix-blend-mode : difference;
+transition : 0.6s;
+margin-left : 14px;
+}
+#general-social-links-footer li a p {
+margin : 0;
+}
+#general-social-links-footer li a .fa {
+color : #fff;
+}
+#general-social-links-footer li a:hover {
+opacity : 1;
+}
+/* ==================================================
+    00. RESPONSIVITY SECTION
+================================================== */
+@media (max-width:1200px) {
+.portrait a img {
+background-size : cover;
+width : 300px;
+}
+.portrait2 {
+display : none;
+}
+.corporate-block img {
+width : 210px;
+height : 132px;
+}
+.How-i-work2 {
+display : inline-block;
+margin-left : 0;
+margin-top : 10px;
+width : auto;
+z-index : 1;
+margin-bottom : 30px;
+float : left;
+}
+.mialeto {
+height: 297px;
+border: #fff solid 4px;
+border-radius: 4px;
+float: right;
+padding-right: 51px;
+margin-top: 100px;
+}
+.infomialeto {
+margin-top: 60px;
+margin-left: 40px;
+}
+.iconmail {
+display: none;
+}
+.mialeto h4 {
+font-size : 10px;
+font-weight : 700;
+color : #fff;
+text-transform : uppercase;
+letter-spacing : 0.2em;
+margin-bottom : -17px;
+}
+
+#general-social-links-footer {
+float : right;
+z-index : 700;
+margin-top : -54px;
+margin-right : 468px;
+list-style : none;
+width : 173px;
+text-align : justify;
+line-height : 0.01em;
+padding : 0;
+transition : 0.6s;
+}
+}
+@media (max-width:992px) {
+.logo {
+margin-top : 23px;
+text-align : center;
+}
+.social-links {
+display : none;
+}
+.snip1403 p {
+font-size : 12px;
+opacity : 0;
+letter-spacing : 1px;
+margin : 0;
+}
+.snip1403 figcaption {
+position : absolute;
+top : 50%;
+margin : 0 40px;
+transform : translate(0%,-50%);
+}
+#general-social-links-footer {
+display : none;
+}
+#general-social-links {
+z-index : 700;
+list-style : none;
+width : 173px;
+text-align : justify;
+line-height : 5.01em;
+padding : 0;
+transition : 0.6s;
+}
+#general-social-links li a {
+text-decoration : none;
+line-height : 23px;
+display : inline-block;
+vertical-align : middle;
+opacity : 1;
+font-size : 28px;
+color : #fff;
+mix-blend-mode : difference;
+transition : 0.6s;
+margin-left : 14px;
+}
+.Welcome-text {
+text-align : center;
+margin : 0 auto;
+}
+.col-md-6 h3 {
+font-size : 50px;
+float : none;
+font-weight : 100;
+color : #fff;
+margin-bottom : -24px;
+width : auto;
+}
+.col-md-6 h2 {
+font-size : 84px;
+color : #fff;
+float : none;
+width : auto;
+}
+.col-md-8 p {
+font-size : 20px;
+font-weight : 300;
+font-style: oblique;
+font-weight: unset;
+margin-bottom : 42px;
+opacity : 0.60000002384185791015625;
+color : #fff;
+width : auto;
+}
+.portrait a img {
+background-size : cover;
+width : 200px;
+}
+.aboutinfo {
+display : inline-block;
+margin-left : 100px;
+margin-top : 23px;
+max-width : 50%;
+width : auto;
+z-index : 1;
+}
+.corporate-block img {
+max-width : 90%;
+width : auto;
+height : auto;
+margin-left : 0;
+}
+#general-social-links-footer {
+float : right;
+z-index : 700;
+margin-top : -54px;
+margin-right : 808px;
+list-style : none;
+width : 173px;
+text-align : justify;
+line-height : 0.01em;
+padding : 0;
+transition : 0.6s;
+}
+.mialeto {
+height: 100%;
+border: #fff solid 4px;
+border-radius: 4px;
+float: right;
+padding-right: 0;
+margin-top: 0;
+width: 100%;
+margin-bottom: 10px;
+}
+}
+
+@media (max-width:773px) {
+.social-links {
+display : none;
+}
+.corporate-block img {
+max-width : 90%;
+width : auto;
+height : auto;
+margin-left : 0;
+}
+.mialeto h2 {
+font-size: 26px;
+color: #fff;
+font-weight: 200;
+}
+.infomialeto {
+margin-top: 20px;
+margin-left: 10px;
+}
+}
+@media (max-width:710px) {
+.portrait a img {
+background-size : cover;
+width : 200px;
+margin-top : 113px;
+}
+.corporate-block {
+width : 100%;
+float : left;
+margin-bottom : 60px;
+margin-top : 60px;
+text-align : center;
+}
+.corporate-block img {
+max-width : 90%;
+width : auto;
+height : auto;
+margin-left : 0;
+}
+}
+@media (max-width:660px) {
+.portrait a img {
+display : none;
+}
+.aboutinfo {
+display : inline-block;
+margin-left : 1px;
+margin-top : 23px;
+max-width : 100%;
+width : auto;
+z-index : 1;
+}
+.How-i-work2 {
+display : inline-block;
+margin-top : 100px;
+max-width : 100%;
+width : auto;
+z-index : 1;
+float : left;
+}
+.portrait2 {
+display : none;
+}
+.filter-button {
+font-size : 15px;
+font-weight : 300;
+border : none;
+color : #333;
+margin-bottom : 0;
+background : transparent;
+margin-top : 10px;
+}
+.textcontact {
+float: left;
+width: 100%;
+margin-top: 54px;
+}
+.iconmail {
+display : none;
+}
+#general-social-links-footer {
+float : right;
+list-style : none;
+width : 197px;
+text-align : justify;
+line-height : 0.01em;
+padding : 0;
+transition : 0.6s;
+}
+
+
+}
