@@ -133,6 +133,18 @@ padding : 14px 16px 13px;
 font-size : 20px;
 }
 
+#top-button{
+
+    background-color: transparent;border: none;
+    display: inline-block;
+}
+
+#top-button img{
+width:32px;
+vertical-align: middle;
+background-color: transparent;
+border: none;
+}
 /* ==================================================
     04. ABOUT
 ================================================== */
@@ -170,9 +182,10 @@ letter-spacing : -0.021em;
 .portrait {
 float : right;
 }
-.portrait a img {
+.portrait img {
 background-size : cover;
 width : 400px;
+content: url(img/portraitMarovski.png);
 }
 
 /* ==================================================
@@ -510,6 +523,9 @@ margin-top : 8px;
 /* ==================================================
     09. CONTACT
 ================================================== */
+a:link {
+    color: #fff;
+    }
 
 .contact {
 background: #2f3033;

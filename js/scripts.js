@@ -21,3 +21,27 @@
             $(this).addClass("active");
 
     });
+
+
+    //ADDED FROM Brittany Chiang
+    const introHeight = document.querySelector('.header').offsetHeight;
+    const topButton = document.getElementById('top-button');
+    const $topButton = $('#top-button');
+  
+    window.addEventListener(
+      'scroll',
+      function() {
+        if (window.scrollY < introHeight) {
+          $topButton.fadeIn();
+        } else {
+          $topButton.fadeOut();
+        }
+      },
+      false
+    );
+
+    //SCROLL UP
+  topButton.addEventListener('click', function() {
+        $('html, body').animate({ scrollTop: 750 }, 0 );
+      });  
+    
