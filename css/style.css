@@ -19,6 +19,13 @@
 
 */
 
+html {
+  font-family: sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+
 
 /* ==================================================
     01. BODY
@@ -26,6 +33,7 @@
 
 body {
 height : 100%;
+      margin: 0;
 }
 .center {
 text-align : center;
