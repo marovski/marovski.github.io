@@ -69,7 +69,7 @@ float: left;
 margin-top : 23px;
 }
 .Welcome-area {
-background : linear-gradient(0deg, rgba(3, 6, 8, 0.63), rgba(3, 6, 8, 0.63)), url(img/background1.png) center center no-repeat;
+background : linear-gradient(0deg, rgba(3, 6, 8, 0.63), rgba(3, 6, 8, 0.63)), url() center center no-repeat;
 background-size : cover;
 height : 700px;
 background-position : 100% 0%;
