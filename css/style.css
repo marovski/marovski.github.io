@@ -151,17 +151,45 @@ padding : 14px 16px 13px;
 font-size : 20px;
 }
 
-#top-button{
+#top-button {
+    -webkit-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+    background: 0 0;
+    border: none;
+    outline: 0;
+    width: 40px;
+    position: fixed;
+    bottom: 25px;
+    right: 10px;
+    cursor: pointer;
+    display: none;
+}
 
-    background-color: transparent;border: none;
-    display: inline-block;
+@media screen and (max-width:1024px) {
+    #top-button {
+        bottom: 20px;
+        right: 7px;
+        width: 35px
+    }
+}
+
+@media screen and (max-width:480px) {
+    #top-button {
+        bottom: 15px;
+        right: 3px
+    }
+}
+
+#top-button:focus,
+#top-button:hover {
+    -webkit-transform: translateY(-10px);
+    transform: translateY(-10px)
 }
 
 #top-button img{
-width:32px;
-vertical-align: middle;
-background-color: transparent;
-border: none;
+width:100%;
+max-width: 100%;
+    vertical-align: middle;
 }
 /* ==================================================
     04. ABOUT
