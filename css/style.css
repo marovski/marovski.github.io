@@ -43,6 +43,7 @@ html,body
 body {
 height : 100%;
       margin: 0;
+      
 }
 .center {
 text-align : center;
@@ -189,7 +190,7 @@ font-weight : 300;
 letter-spacing : 0.011em;
 }
 .aboutinfo p {
-font-style: italic;
+
 margin : 0 0 10px;
 font-size : 17px;
 line-height : 1.52947;
@@ -236,7 +237,7 @@ background : #fff;
 }
 .services-content {
 margin-bottom : 40px;
-font-family : roboto;
+font-family: Apercu,"Source Sans Pro",system,system-ui,-apple-system,BlinkMacSystemFont,Roboto,Helvetica,Arial,sans-serif;
 }
 .skillbar {
     position: relative;
@@ -349,7 +350,7 @@ width : 90%;
 margin-bottom : 30px;
 }
 .snip1403 {
-font-family : roboto;
+    font-family: Apercu,"Source Sans Pro",system,system-ui,-apple-system,BlinkMacSystemFont,Roboto,Helvetica,Arial,sans-serif;
 float : left;
 overflow : hidden;
 max-height : 240px;
