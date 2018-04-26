@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 
 <head>
     <meta charset="UTF-8" />
@@ -45,26 +45,41 @@
     <!--Emoji-->
     <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117946471-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'UA-117946471-1');
-    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
 
 
 </head>
 
 <body>
-
-
+        <nav >
+                <ul id="dot-nav">
+                        <li class="dot-container current">
+                                <a href="#section-0" data-number="0"> <span class="dot"></span> <span class="dot-label">Intro</span> </a>
+                            </li>
+                    <li class="dot-container">
+                        <a href="#section-1" data-number="1"> <span class="dot"></span> <span class="dot-label">About</span> </a>
+                    </li>
+                    <li class="dot-container">
+                            <a href="#section-2" data-number="2"> <span class="dot"></span> <span class="dot-label">Journey</span> </a>
+                        </li>
+                    <li class="dot-container">
+                        <a href="#section-3" data-number="3"> <span class="dot"></span> <span class="dot-label">Skills</span> </a>
+                    </li>
+                    
+                    <li class="dot-container">
+                        <a href="#section-4" data-number="4"> <span class="dot"></span> <span class="dot-label">Portfolio</span> </a>
+                    </li>
+                    <li class="dot-container">
+                        <a href="#section-5" data-number="5"> <span class="dot"></span> <span class="dot-label">Contact</span> </a>
+                    </li>
+                </ul>
+            </nav>
+            
+        <div id="skrollr-body">
     <!-- WELCOME AREA
 	      ================================================== -->
 
-    <div class="Welcome-area">
+    <section class="Welcome-area"  id="section-0">
         <div class="container">
 
 
@@ -74,7 +89,7 @@
                 <!-- Logo -->
 
                 <div class="logo">
-                    <a href="#" style="display: inline-block;">
+                    <a href="https:://marovski.github.io" style="display: inline-block;">
                         <!--Replace this with your logo image-->
                         <img alt="logo" src="img/logo.png" />
                         <!--Replace this with your logo image-->
@@ -126,7 +141,7 @@
             <!-- Welcome-text -->
 
 
-            <div class="Welcome-text">
+            <div class="Welcome-text" >
                 <div class="row">
                     <div class="col-md-6">
                         <h3>HELLO I’M</h3>
@@ -141,14 +156,15 @@
                         <p>Let me wish you a warm welcome to my personal website. Here you can find information about me
                             
                         </p>
-
+                        
                     </div>
-
+              
+                   
 
                 </div>
             </div>
         </div>
-    </div>
+    </section>
  
     <!-- ABOUT
 	      ================================================== -->
@@ -160,9 +176,9 @@
             <div class="lineprojects"></div>
         </div>
     </div>
-    <div class="about">
+    <section class="section" id="section-1">
         <div class="container">
-            <div class="aboutinfo">
+            <div class="aboutinfo" >
 
                 <!--Replace this with your Name-->
                 <h2>Mário Cardoso</h2>
@@ -198,7 +214,7 @@
 
 
         </div>
-    </div>
+    </section>
     <!-- That's How I Works
           ================================================== -->
 
@@ -212,9 +228,9 @@
     </div>
 
 
-    <div class="how-i-work">
+    <section class="section" id="section-2" >
         <div class="container">
-            <div class="how-i-workn">
+            <div class="journeyn" >
 
 
                 <ul class="timeline">
@@ -345,7 +361,7 @@
             <!-- </a>
                     </div> -->
         </div>
-    </div>
+    </section>
 
     <!-- Skills
           ================================================== -->
@@ -357,9 +373,9 @@
             <div class="lineprojects"></div>
         </div>
     </div>
-    <div class="services">
+    <section class="section" id="section-3">
         <div class="container">
-            <div class="services-content">
+            <div class="services-content" >
                 <div class="row text-center">
                     <br>
 
@@ -659,7 +675,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- My Recent Works
           ================================================== -->
@@ -670,7 +686,7 @@
             <div class="lineprojects"></div>
         </div>
     </div>
-    <div class="recentworks">
+    <section class="section" id="section-4">
         <div class="container">
             <div class="row">
                 <div class="caty">
@@ -840,7 +856,7 @@
             </div>
         </div>
 
-    </div>
+    </section>
 
 
 
@@ -849,7 +865,7 @@
     <!-- CONTACT
 	      ================================================== -->
 
-    <div class="contact">
+    <section class="section" id="section-5">
         <div class="container">
             <div class="col col-md-12">
                 <div class="col col-md-5">
@@ -917,7 +933,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- FOOTER
 	      ================================================== -->
@@ -961,17 +977,29 @@
 
     <button id="top-button">  <img src="img/emoji/pointDown.png" alt=""> </button>
 
-    <!-- Javascript Files Needed -->
+
+</div>
+        <!-- Javascript Files Needed -->
  
     <!-- jQuery -->
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="bootstrap-4.0.0-dist/js/bootstrap.min.js"></script>
     
-    <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script> 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117946471-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-117946471-1');
+    </script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
     <script src="js/scripts.js" type="text/javascript" charset="utf-8"></script>
+  
 
-    
+
+   
 </body>
 
 </html>
