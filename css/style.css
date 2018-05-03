@@ -335,28 +335,7 @@ background-size : cover;
 width : 400px;
 content: url(img/portraitMarovski.png);
 }
-/* thumbnail animation */
-.gdlr-core-opacity-on-hover img, .gdlr-core-zoom-on-hover img, .gdlr-core-grayscale-effect img{
-	transition: opacity 300ms ease-out, transform 300ms ease-out, filter 300ms ease-out;
-	-moz-transition: opacity 300ms ease-out, -moz-transform 300ms ease-out, -moz-filter 300ms ease-out;
-	-o-transition: opacity 300ms ease-out, -o-transform 300ms ease-out, -o-filter 300ms ease-out;
-	-webkit-transition: opacity 300ms ease-out, -webkit-transform 300ms ease-out, -webkit-filter 300ms ease-out;
-	}
 
-/* .gdlr-core-opacity-on-hover{background: #000;} */
-.gdlr-core-opacity-on-hover:hover img{ opacity: 0.5; filter: alpha(opacity=50); }
-.gdlr-core-zoom-on-hover{overflow: hidden;}
-.gdlr-core-zoom-on-hover:hover img{ -webkit-transform: scale(1.1); transform: scale(1.1); }
-.gdlr-core-grayscale-effect img{
-	-webkit-filter: grayscale(100%); 
-	-moz-filter: grayscale(100%); 
-	-o-filter: grayscale(100%); 
-	filter: grayscale(100%); }
-.gdlr-core-grayscale-effect:hover img{
-	-webkit-filter: grayscale(0%);
-	-moz-filter: grayscale(0%); 
-	-o-filter: grayscale(0%); 
-	filter: grayscale(0%); }
 
 /* ==================================================
     05. Skill
@@ -488,7 +467,7 @@ height : auto;
 width : auto;
 color : #333;
 text-align : left;
-font-size : 16px;
+font-size : 10px;
 background-color : transparent;
 line-height : 1.6em;
 font-weight : 400;
@@ -530,12 +509,12 @@ top : 50%;
 }
 .snip1403 figcaption div:before {
 width : 1px;
-height : 50px;
+height : 40px;
 transform : translateY(-50%);
 }
 .snip1403 figcaption div:after {
 height : 1px;
-width : 50px;
+width : 30px;
 transform : translateX(-50%);
 }
 .snip1403 p {
@@ -556,20 +535,12 @@ opacity : 0.1500000059604644775390625;
 .snip1403:hover figcaption p, .snip1403.hover figcaption p {
 transition-delay : 0.6s;
 opacity : 1;
+font-size: 14px;
+word-wrap: break-word;
+text-align: center;
+
 }
-.snip1403:hover figcaption .plus1, .snip1403.hover figcaption .plus1, .snip1403:hover figcaption .plus2, .snip1403.hover figcaption .plus2 {
-transform : rotate(0);
-}
-.snip1403:hover figcaption .plus1:before, .snip1403.hover figcaption .plus1:before, .snip1403:hover figcaption .plus1:after, .snip1403.hover figcaption .plus1:after {
-top : 0;
-left : 0;
-transition-delay : 0.35s;
-}
-.snip1403:hover figcaption .plus2:before, .snip1403.hover figcaption .plus2:before, .snip1403:hover figcaption .plus2:after, .snip1403.hover figcaption .plus2:after {
-top : 100%;
-left : 100%;
-transition-delay : 0.35s;
-}
+
 
 /* ==================================================
     07. How i Works
@@ -861,10 +832,23 @@ text-align : center;
 display : none;
 }
 .snip1403 p {
-font-size : 12px;
+font-size : 10px;
 opacity : 0;
 letter-spacing : 1px;
+    word-wrap: break-word;
 margin : 0;
+}
+
+@media (max-width: 992px)
+.snip1403 p {
+    font-size: 8px; !important;
+    opacity: 0;
+    word-wrap: break-word;
+    letter-spacing: 1px;
+    margin: 0;
+    font-size: xx-small;
+    text-align: center;
+
 }
 .snip1403 figcaption {
 position : absolute;
@@ -1048,13 +1032,14 @@ display : none;
 }
 #general-social-links-footer {
 float : right;
-list-style : none;
+
 width : 197px;
 text-align : justify;
 line-height : 0.01em;
 padding : 0;
 transition : 0.6s;
 }
+#general-social-links-footer ul { list-style: none; }
 
 
 }

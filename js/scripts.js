@@ -24,7 +24,16 @@ $(".filter-button").on("click", function () {
 
 
 
+function updateProgress(){
+ 
+  document.getElementById('progress').style.width = document.querySelector('.skillbar').dataset.percentage ;
+}
 
+window.addEventListener('scroll', function(){
+  var top = window.scrollY;
+  var height = document.body.getBoundingClientRect().height - window.innerHeight;
+  updateProgress();
+});
 
 });
 
