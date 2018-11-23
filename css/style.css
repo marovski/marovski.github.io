@@ -551,6 +551,7 @@ background : #fff;
 }
 .timeline-body{
 font-size: 20px;
+text-align: justify;
 }
 .titlesec {
 font-size : 40px;
@@ -902,7 +903,8 @@ float : none;
 width : auto;
 }
 .col-md-8 p {
-font-size : 20px;
+font-size : 25px;
+text-align: justify;
 font-weight : 300;
 font-style: oblique;
 font-weight: unset;
