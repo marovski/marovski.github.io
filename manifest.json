@@ -1,0 +1,15 @@
+{
+    "short_name": "Mário",
+    "name": "Mário Personal Website",
+    "icons": [
+      {
+        "src": "./img/emoji/technerd.png",
+        "type": "image/png",
+        "sizes": "160x160"
+      }
+    ],
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color":"#fff;",
+    "theme_color": "#d8d6c9"
+  }
