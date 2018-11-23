@@ -839,7 +839,7 @@ letter-spacing : 1px;
 margin : 0;
 }
 
-@media (max-width: 992px)
+@media (max-width: 992px){
 .snip1403 p {
     font-size: 8px; !important;
     opacity: 0;
