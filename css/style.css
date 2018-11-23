@@ -549,7 +549,7 @@ text-align: center;
 #section-2 {
 background : #fff;
 }
-#section-2 p{
+.timeline-body{
 font-size: 20px;
 }
 .titlesec {
