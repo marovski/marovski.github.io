@@ -322,7 +322,7 @@ letter-spacing : 0.011em;
 .aboutinfo p {
 
 margin : 0 0 10px;
-font-size : 17px;
+font-size : 20px;
 line-height : 1.52947;
 font-weight : 400;
 letter-spacing : -0.021em;
@@ -548,6 +548,9 @@ text-align: center;
 
 #section-2 {
 background : #fff;
+}
+#section-2 p{
+font-size: 20px;
 }
 .titlesec {
 font-size : 40px;
