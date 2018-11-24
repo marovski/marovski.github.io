@@ -391,7 +391,7 @@ font-family: Apercu,"Source Sans Pro",system,system-ui,-apple-system,BlinkMacSys
 
 .skillbar-title {
     color: #323232;
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 600;
     text-transform: uppercase;
     display: inline-block;
@@ -401,7 +401,7 @@ font-family: Apercu,"Source Sans Pro",system,system-ui,-apple-system,BlinkMacSys
     float: right;
     display: inline-block;
     color: #323232;
-    font-size: 11px;
+    font-size: 12px;
     font-weight: 600;
     text-transform: uppercase;
 }
@@ -467,7 +467,7 @@ height : auto;
 width : auto;
 color : #333;
 text-align : left;
-font-size : 10px;
+font-size : 12px;
 background-color : transparent;
 line-height : 1.6em;
 font-weight : 400;
@@ -519,9 +519,12 @@ transform : translateX(-50%);
 }
 .snip1403 p {
 opacity : 0;
-letter-spacing : 1px;
+display: flex;
+font-size: 12px;
+text-align: center;
 margin : 0;
 }
+
 .snip1403 a {
 position : absolute;
 top : 0;
@@ -827,25 +830,18 @@ padding : 0;
 transition : 0.6s;
 }
 }
-@media (max-width:992px) {
-.logo {
-margin-top : 23px;
-text-align : center;
-}
-.social-links {
-display : none;
-}
-.snip1403 p {
-font-size : 10px;
-opacity : 0;
-letter-spacing : 1px;
-    word-wrap: break-word;
-margin : 0;
-}
+
 
 @media (max-width: 992px){
+    .logo {
+        margin-top : 23px;
+        text-align : center;
+        }
+        .social-links {
+        display : none;
+        }
 .snip1403 p {
-    font-size: 8px; !important;
+    font-size: 8px !important;
     opacity: 0;
     word-wrap: break-word;
     letter-spacing: 1px;
