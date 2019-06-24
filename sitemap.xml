@@ -1,11 +1,57 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-  <url>
-    <loc>http://iamcardozo.eu/</loc>
-    <changefreq>daily</changefreq>
-    <priority>0.1</priority>
-  </url>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+
+
+<url>
+  <loc>https://marovski.github.io/</loc>
+  <lastmod>2019-06-23T12:53:56+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://marovski.github.io/KumiPensaBlog/</loc>
+  <lastmod>2019-06-23T13:00:54+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://marovski.github.io/tribute-Cabral/</loc>
+  <lastmod>2019-06-23T12:58:12+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://marovski.github.io/KumiPensaBlog/about/</loc>
+  <lastmod>2019-06-23T13:00:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://marovski.github.io/KumiPensaBlog/2019-03-09/sabadao</loc>
+  <lastmod>2019-06-23T13:00:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://marovski.github.io/KumiPensaBlog/2018-09-30/conhecimento</loc>
+  <lastmod>2019-06-23T13:00:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://marovski.github.io/KumiPensaBlog/2018-08-28/criola-rainha</loc>
+  <lastmod>2019-06-23T13:00:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://marovski.github.io/KumiPensaBlog/2017-05-12/por-dinheiro</loc>
+  <lastmod>2019-06-23T13:00:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://marovski.github.io/KumiPensaBlog/2017-05-11/amor-injuriadu</loc>
+  <lastmod>2019-06-23T13:00:54+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+
+
 </urlset>
-<!--<guid value="0be6577c-9ab4-41dc-8ab5-a713f4d7483c" />-->
-<!--Created using XmlSitemapGenerator.org - Free HTML, RSS and XML sitemap generator-->
