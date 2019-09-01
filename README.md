@@ -2,16 +2,16 @@
 
 A simply and effective resumè website.
 
-#Built With
+## Built With
 * CSS3
 * Html5
 * Javascript
 
-#Html Page
+# Html Page
 
 The main html page is index.html. The file has comments to guide you through the html structure.
 
-#Stylesheets (CSS)
+# Stylesheets (CSS)
 
 The main css file is style.css under /css directory all commented for reuse. 
 The same directory contains 3 more css files:
