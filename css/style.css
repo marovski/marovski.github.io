@@ -710,12 +710,14 @@ background : transparent;
 margin-bottom : 72px;
 }
 i.fa.fa-phone {
-padding : 17px 18px 13px;
-color : #fff;
+padding: 6px 7px 13px;
+    color: #fff;
+    font-size: 17px;
 }
 i.fa.fa-envelope {
-padding : 17px 18px 13px;
-color : #fff;
+padding: 6px 7px 13px;
+    color: #fff;
+    font-size: 17px;
 }
 
 /* ==================================================
