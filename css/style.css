@@ -592,7 +592,10 @@ i.fa.fa-search-plus {
     text-align: center;
 
 }
-
+.img-responsive{
+    width: 500;
+    height: 396;
+}
 
 /* ==================================================
     07. How i Works
