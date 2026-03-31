@@ -792,30 +792,27 @@ i.fa.fa-envelope {
     10. Footer
 ================================================== */
 .footer {
-
     background: #2f3033;
     z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
 }
 
 .copyright p {
     color: #888;
     font-size: 14px;
-    line-height: 6;
     margin: 0;
     text-transform: capitalize;
 }
 
 #general-social-links-footer {
-    float: right;
-    z-index: 1;
-    margin-top: -54px;
-    margin-right: 680px;
     list-style: none;
-    width: 173px;
-    text-align: justify;
-    line-height: 0.01em;
+    display: flex;
+    gap: 15px;
+    margin: 0;
     padding: 0;
-    transition: 0.6s;
 }
 
 #general-social-links-footer li {
@@ -824,15 +821,11 @@ i.fa.fa-envelope {
 
 #general-social-links-footer li a {
     text-decoration: none;
-    line-height: 23px;
     display: inline-block;
-    vertical-align: middle;
-    opacity: 0.60000002384185791015625;
+    opacity: 0.6;
     font-size: 18px;
     color: #fff;
-    mix-blend-mode: difference;
     transition: 0.6s;
-    margin-left: 14px;
 }
 
 #general-social-links-footer li a p {
@@ -850,6 +843,15 @@ i.fa.fa-envelope {
 /* ==================================================
     00. RESPONSIVITY SECTION
 ================================================== */
+@media (max-width: 768px) {
+    .footer {
+        flex-direction: column;
+        text-align: center;
+    }
+    #general-social-links-footer {
+        margin-top: 10px;
+    }
+}
 @media (max-width:1200px) {
     .portrait a img {
         background-size: cover;
