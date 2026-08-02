@@ -1005,22 +1005,6 @@ content : "\e259";
 .glyphicon-menu-up:before {
 content : "\e260";
 }
-* {
-box-sizing : border-box;
-}
-:after, :before {
-box-sizing : border-box;
-}
-html {
-font-size : 10px;
-}
-body {
-    font-family: Apercu,"Source Sans Pro",system,system-ui,-apple-system,BlinkMacSystemFont,Roboto,Helvetica,Arial,sans-serif;
-font-size : 14px;
-line-height : 1.42857143;
-color : #333;
-background-color : #f2f2f2;
-}
 button, input, select, textarea {
 font-family : inherit;
 font-size : inherit;
