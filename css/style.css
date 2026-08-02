@@ -329,12 +329,6 @@ body {
     background: var(--color-bg);
 }
 
-.center {
-    text-align: center;
-    margin: 0 auto;
-    margin-right: 70px;
-}
-
 
 /* ==================================================
     02. TYPOGRAPHY
@@ -437,47 +431,6 @@ body {
 
 #general-social-links li a:hover {
     opacity: 1;
-}
-
-#top-button {
-    -webkit-transition: all .2s ease-in-out;
-    transition: all .2s ease-in-out;
-    background: 0 0;
-    border: none;
-    outline: 0;
-    width: 40px;
-    position: fixed;
-    bottom: 25px;
-    right: 10px;
-    cursor: pointer;
-    display: none;
-}
-
-@media screen and (max-width:1024px) {
-    #top-button {
-        bottom: 20px;
-        right: 7px;
-        width: 35px
-    }
-}
-
-@media screen and (max-width:480px) {
-    #top-button {
-        bottom: 15px;
-        right: 3px
-    }
-}
-
-#top-button:focus,
-#top-button:hover {
-    -webkit-transform: translateY(-10px);
-    transform: translateY(-10px)
-}
-
-#top-button img {
-    width: 100%;
-    max-width: 100%;
-    vertical-align: middle;
 }
 
 /* ==================================================
@@ -679,15 +632,6 @@ body {
 .skill-pill--soft:hover {
     background: #e6540f;
     color: #fff;
-}
-
-/* CENTERING ONLY */
-
-.wrapper {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
 }
 
 /* ==================================================
@@ -941,15 +885,6 @@ body {
     text-decoration: underline;
 }
 
-.btn-default:active .filter-button:active {
-    background-color: #42B32F;
-    color: #fff;
-}
-
-.port-image {
-    width: 90%;
-}
-
 .gallery_product {
     margin-bottom: 30px;
 }
@@ -1040,13 +975,11 @@ body {
     right: 0;
 }
 
-.snip1403:hover img,
-.snip1403.hover img {
+.snip1403:hover img {
     opacity: 0.1500000059604644775390625;
 }
 
-.snip1403:hover figcaption p,
-.snip1403.hover figcaption p {
+.snip1403:hover figcaption p {
     transition-delay: 0.6s;
     opacity: 1;
     font-size: 14px;
@@ -1065,13 +998,6 @@ body {
 
 #section-2 {
     background: #fff;
-}
-
-.titlesec {
-    font-size: 40px;
-    line-height: 1.05;
-    font-weight: 500;
-    letter-spacing: 0.008em;
 }
 
 /* ==================================================
