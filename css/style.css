@@ -82,25 +82,23 @@ button:focus-visible,
 ================================================== */
 #dot-nav {
     position: fixed;
-    right: 24px;
+    right: max(24px, calc((100vw - 1200px) / 2 - 40px));
     z-index: 1000;
     top: 50%;
     bottom: auto;
     transform: translateY(-50%);
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    padding: 10px 4px;
+    gap: 14px;
+    padding: 8px 4px;
     width: 28px;
     min-width: 28px;
-    border: 1px solid rgba(29, 30, 33, 0.04);
-    border-radius: 999px;
-    background: rgba(255, 255, 255, 0.12);
+    border: none;
+    border-radius: 14px;
+    background: transparent;
     box-shadow: none;
-    backdrop-filter: none;
-    -webkit-backdrop-filter: none;
     overflow: hidden;
-    transition: width 0.24s ease, min-width 0.24s ease, padding 0.24s ease, background 0.24s ease, box-shadow 0.24s ease, border-color 0.24s ease, transform 0.24s ease;
+    transition: width 0.24s ease, min-width 0.24s ease, padding 0.24s ease, background 0.24s ease, box-shadow 0.24s ease, transform 0.24s ease;
 }
 
 #dot-nav.active {
@@ -113,17 +111,52 @@ button:focus-visible,
     width: 176px;
     min-width: 176px;
     padding: 14px 12px;
-    border-color: rgba(29, 30, 33, 0.08);
-    background: rgba(255, 255, 255, 0.78);
-    box-shadow: 0 20px 40px rgba(15, 18, 22, 0.12);
-    backdrop-filter: blur(18px);
-    -webkit-backdrop-filter: blur(18px);
+    background: #fff;
+    box-shadow: 0 16px 34px rgba(15, 18, 22, 0.16);
 }
 
-@media only screen and (max-width:768px) {
-    #dot-nav {
-        display: none
-    }
+#nav-toggle {
+    display: none;
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    z-index: 1001;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5px;
+    border: none;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.92);
+    box-shadow: 0 6px 18px rgba(15, 18, 22, 0.18);
+    cursor: pointer;
+}
+
+.nav-toggle__bar {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: #1d1e21;
+    border-radius: 2px;
+    transition: transform 0.25s ease, opacity 0.25s ease;
+}
+
+#nav-toggle.is-open .nav-toggle__bar:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+#nav-toggle.is-open .nav-toggle__bar:nth-child(2) {
+    opacity: 0;
+}
+
+#nav-toggle.is-open .nav-toggle__bar:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+#nav-backdrop {
+    display: none;
 }
 
 #dot-nav .dot-container {
@@ -215,6 +248,73 @@ button:focus-visible,
 #dot-nav a.is-selected:focus-visible {
     transform: translateX(-2px);
     background: linear-gradient(135deg, rgba(40, 57, 144, 0.98), rgba(107, 40, 144, 0.94));
+}
+
+@media only screen and (max-width:768px) {
+    #nav-toggle {
+        display: flex;
+    }
+
+    #nav-backdrop {
+        display: block;
+        position: fixed;
+        inset: 0;
+        z-index: 998;
+        background: rgba(15, 18, 22, 0.45);
+        opacity: 0;
+        pointer-events: none;
+        transition: opacity 0.25s ease;
+    }
+
+    #nav-backdrop.is-open {
+        opacity: 1;
+        pointer-events: auto;
+    }
+
+    #dot-nav {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: auto;
+        left: auto;
+        transform: translateX(100%);
+        width: min(78vw, 300px);
+        min-width: 0;
+        height: 100dvh;
+        max-height: none;
+        border: none;
+        border-left: 1px solid rgba(29, 30, 33, 0.08);
+        border-radius: 0;
+        background: #fff;
+        box-shadow: -20px 0 40px rgba(15, 18, 22, 0.18);
+        padding: 88px 20px 24px;
+        gap: 6px;
+        overflow-y: auto;
+        z-index: 999;
+        transition: transform 0.3s ease;
+    }
+
+    #dot-nav.is-open {
+        transform: translateX(0);
+    }
+
+    #dot-nav a {
+        padding: 14px 12px;
+    }
+
+    #dot-nav .dot-label {
+        max-width: none;
+        opacity: 1;
+        margin-left: 0;
+        font-size: 1rem;
+        color: #2b3140;
+    }
+
+    #dot-nav a.is-selected .dot-label {
+        color: #fff;
+    }
 }
 
 /* ==================================================
@@ -1305,10 +1405,6 @@ section[id] {
 }
 
 @media (max-width: 768px) {
-    #dot-nav {
-        display: none;
-    }
-
     .Welcome-text {
         text-align: center;
         display: flex;

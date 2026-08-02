@@ -133,4 +133,54 @@ document.addEventListener("DOMContentLoaded", function () {
       item.classList.add("is-visible");
     });
   }
+
+  var navToggle = document.getElementById("nav-toggle");
+  var navBackdrop = document.getElementById("nav-backdrop");
+  var dotNav = document.getElementById("dot-nav");
+
+  if (navToggle && navBackdrop && dotNav) {
+    var closeMobileNav = function () {
+      navToggle.classList.remove("is-open");
+      navToggle.setAttribute("aria-expanded", "false");
+      dotNav.classList.remove("is-open");
+      navBackdrop.classList.remove("is-open");
+      navBackdrop.hidden = true;
+    };
+
+    var openMobileNav = function () {
+      navToggle.classList.add("is-open");
+      navToggle.setAttribute("aria-expanded", "true");
+      dotNav.classList.add("is-open");
+      navBackdrop.hidden = false;
+      requestAnimationFrame(function () {
+        navBackdrop.classList.add("is-open");
+      });
+    };
+
+    navToggle.addEventListener("click", function () {
+      if (navToggle.classList.contains("is-open")) {
+        closeMobileNav();
+      } else {
+        openMobileNav();
+      }
+    });
+
+    navBackdrop.addEventListener("click", closeMobileNav);
+
+    navLinks.forEach(function (link) {
+      link.addEventListener("click", closeMobileNav);
+    });
+
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") {
+        closeMobileNav();
+      }
+    });
+
+    window.addEventListener("resize", function () {
+      if (window.innerWidth > 768) {
+        closeMobileNav();
+      }
+    });
+  }
 });
