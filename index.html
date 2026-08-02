@@ -2,19 +2,6 @@
 <html lang="en">
 
 <head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-117946471-1"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-
-        function gtag() {
-            dataLayer.push(arguments);
-        }
-        gtag('js', new Date());
-
-  gtag('config', 'G-TW0S1VL96D');
-</script>
-        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
     <meta charset="UTF-8" />
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -39,26 +26,13 @@
     <!-- Animate -->
     <link href="css/animate.css" rel="stylesheet" media="screen">
     <!-- Bootstrap 3x-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-        crossorigin="anonymous">
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"  crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.rawgit.com/jpswalsh/academicons/master/css/academicons.min.css"
-        crossorigin="anonymous">
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i"
-        rel="stylesheet" crossorigin="anonymous" />
-    <!--Emoji-->
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css"
-        crossorigin="anonymous">
 </head>
 
 <body>
-    <nav>
+    <nav aria-label="Section navigation">
         <ul id="dot-nav">
             <li class="dot-container current">
                 <a href="#section-0" data-number="0"> <span class="dot"></span> <span class="dot-label">Intro</span>
@@ -105,24 +79,23 @@
                         <div class="social-links">
                             <ul id="general-social-links">
                                 <li>
-                                    <a href="https://github.com/marovski" target="_blank" alt="GitHub" rel="noreferrer">
+                                    <a href="https://github.com/marovski" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                                         <i class="fa fa-github"></i>
                                     </a>
                                 </li>
                                 <li>
                                     <a href="https://www.linkedin.com/in/m%C3%A1rio-cardoso-84481772/" target="_blank"
-                                        rel="noreferrer">
+                                        rel="noopener noreferrer" aria-label="LinkedIn">
                                         <i class="fa fa-linkedin"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="https://marovski.github.io/KumiPensaBlog/" alt="Blog" rel="noreferrer">
+                                    <a href="https://marovski.github.io/KumiPensaBlog/" rel="noopener noreferrer" aria-label="Blog">
                                         <i class="fa fa-book"></i>
                                     </a>
                                 </li>
                                 <li>
-                                    <a href="https://www.instagram.com/cardozomariocv/" target="_blank" alt="Instagram"
-                                        rel="noreferrer">
+                                    <a href="https://www.instagram.com/cardozomariocv/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
                                         <i class="fa fa-instagram"></i>
                                     </a>
                                 </li>
@@ -161,25 +134,28 @@
         </div>
         <section class="section" id="section-1">
             <div class="container">
-                <div class="aboutinfo">
-                    <h2>Mário Cardoso</h2>
-                    <br />
-                    <!--informations-->
-                    <p>I'm an Engineering Project Manager driven by a simple idea: technology should solve real problems.</p>
-                    <p>Over the past few years, my work has evolved beyond engineering into the intersection of project management, digital transformation, software development and entrepreneurship. I currently lead enterprise projects in the telecommunications sector, where I coordinate multidisciplinary teams, align business objectives with technical execution, and help transform strategy into operational results.</p>
-                    <p>Outside my professional role, I enjoy building products from the ground up. From developing a direct booking platform for my accommodation business to experimenting with AI-assisted development workflows, I'm constantly exploring how modern technologies can simplify processes and create value.</p>
-                    <p>I also have a strong interest in data storytelling, governance and the future of Cabo Verde. I believe that complex topics become more useful when presented through clear analysis, compelling visuals and practical insights.</p>
-                    <p>I hold a Master's degree in Engineering and Information Systems Management from the University of Minho (Portugal), but I see continuous learning as an essential part of my career. Technology evolves quickly, and I strive to evolve with it.</p>
-                    <p>When I'm away from my laptop, you'll usually find me at the gym, driving around the island, travelling, or planning the next project to build.</p>
-                    <p><strong>Now:</strong> Leading enterprise projects as Supervisor de Gestão de Projetos Empresariais at CVTelecom, building the Cantinho C direct booking platform, and maintaining the Simulador Crédito CV.</p>
-                    <!-- informations-->
-                </div>
-                <div class="portrait">
-                    <!-- portrait img-->
-                    <picture class="img-responsive">
-                        <source srcset="img/portraitMarovski.webp" type="image/webp">
-                        <img alt="Portrait of Mário Cardoso" src="img/portraitMarovski.png">
-                    </picture>
+                <div class="about-modern">
+                    <div class="about-modern__photo">
+                        <picture>
+                            <source srcset="img/portraitMarovski.webp" type="image/webp">
+                            <img alt="Portrait of Mário Cardoso" src="img/portraitMarovski.png">
+                        </picture>
+                    </div>
+                    <div class="about-modern__content">
+                        <h2 class="about-modern__name">Mário Cardoso</h2>
+                        <div class="about-modern__bio">
+                            <p>I'm an Engineering Project Manager driven by a simple idea: technology should solve real problems.</p>
+                            <p>Over the past few years, my work has evolved beyond engineering into the intersection of project management, digital transformation, software development and entrepreneurship. I currently lead enterprise projects in the telecommunications sector, where I coordinate multidisciplinary teams, align business objectives with technical execution, and help transform strategy into operational results.</p>
+                            <p>Outside my professional role, I enjoy building products from the ground up. From developing a direct booking platform for my accommodation business to experimenting with AI-assisted development workflows, I'm constantly exploring how modern technologies can simplify processes and create value.</p>
+                            <p>I also have a strong interest in data storytelling, governance and the future of Cabo Verde. I believe that complex topics become more useful when presented through clear analysis, compelling visuals and practical insights.</p>
+                            <p>I hold a Master's degree in Engineering and Information Systems Management from the University of Minho (Portugal), but I see continuous learning as an essential part of my career. Technology evolves quickly, and I strive to evolve with it.</p>
+                            <p>When I'm away from my laptop, you'll usually find me at the gym, driving around the island, travelling, or planning the next project to build.</p>
+                        </div>
+                        <div class="about-modern__now">
+                            <span class="about-modern__now-badge">Now</span>
+                            <p>Leading enterprise projects as Supervisor de Gestão de Projetos Empresariais at CVTelecom, building the Cantinho C direct booking platform, and maintaining the Simulador Crédito CV.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -188,7 +164,7 @@
         <div class="container">
             <div class="section1-title">
                 <h2>Journey
-                    <i class="em em-bicyclist"></i>
+                    <i class="fa fa-compass" aria-hidden="true"></i>
                 </h2>
                 <div class="lineprojects"></div>
             </div>
@@ -196,274 +172,281 @@
         <section class="section" id="section-2">
             <div class="container">
                 <div class="journeyn">
+                    <div class="timeline-filters" role="group" aria-label="Filter journey by category">
+                        <button type="button" class="timeline-filter is-active" data-filter="all"><span class="timeline-filter__icon" aria-hidden="true"><i class="fa fa-list"></i></span><span>All</span></button>
+                        <button type="button" class="timeline-filter" data-filter="professional"><span class="timeline-filter__icon" aria-hidden="true"><i class="fa fa-briefcase"></i></span><span>Professional</span></button>
+                        <button type="button" class="timeline-filter" data-filter="academic"><span class="timeline-filter__icon" aria-hidden="true"><i class="fa fa-graduation-cap"></i></span><span>Academic</span></button>
+                        <button type="button" class="timeline-filter" data-filter="personal"><span class="timeline-filter__icon" aria-hidden="true"><i class="fa fa-user"></i></span><span>Personal</span></button>
+                    </div>
                     <ul class="timeline">
-                  
-                        <li >
-                            <div class="timeline-badge success" style="background-color: #283990 !important;">
-                                <i class="glyphicon glyphicon-briefcase"></i>
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4 class="timeline-title"> Cabo Verde Telecom </h4>
-                                    <p>
-                                        <small class="text-muted">
-                                            <span class="glyphicon glyphicon-time"></span>JUL 2026 - PRESENT</small>
-                                    </p>
-                                </div>
-                                <div class="timeline-body">
-                                    <p><small>Supervisor de Gestão de Projetos Empresariais, Direção de Clientes Empresariais, at CVTelecom in Praia - Cabo Verde.</small></p></div>
-                            </div>
-                        </li>
 
-                        <li class="timeline-inverted">
-                            <div class="timeline-badge success" style="background-color: #283990 !important;">
-                                <i class="glyphicon glyphicon-briefcase"></i>
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4 class="timeline-title"> Cabo Verde Telecom </h4>
-                                    <p>
-                                        <small class="text-muted">
-                                            <span class="glyphicon glyphicon-time"></span>OCT 2023 - JUN 2026</small>
-                                    </p>
+                        <li class="tl-item tl-item--professional" data-category="professional">
+                            <span class="tl-item__dot"><i class="glyphicon glyphicon-briefcase"></i></span>
+                            <div class="tl-item__card" role="button" tabindex="0" aria-expanded="true">
+                                <div class="tl-item__head">
+                                    <div class="tl-item__heading">
+                                        <h4 class="tl-item__title">Cabo Verde Telecom</h4>
+                                        <span class="tl-item__date">Jul 2026 – Present</span>
+                                    </div>
+                                    <span class="tl-item__chevron"><i class="glyphicon glyphicon-chevron-down"></i></span>
                                 </div>
-                                <div class="timeline-body">
-                                    <p><small>Engineering Projects Manager at the Department of Engineer and Investments of CVT in Praia - Cabo Verde.</small></p></div>
-                            </div>
-                        </li>
-
-                        <li class="timeline-inverted">
-                            <div class="timeline-badge success" style="background-color: #6b2890 !important;">
-                                <i class="glyphicon glyphicon-briefcase" ></i>
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4 class="timeline-title"><a href="https://cantinhoc.business.site/" target="_blank" rel="noopener noreferrer">Cantinho C Alojamento Complementar</a>  </h4>
-                                    <p>
-                                        <small class="text-muted">
-                                            <span class="glyphicon glyphicon-time"></span>JUN 2023 - PRESENT</small>
-                                    </p>
-                                </div>
-                                <div class="timeline-body">
-                                    <p><small>General Manager in charge of a small BnB in Praia - Cabo Verde, responsible for the efficient running of your establishment. 
-                                        This includes ensuring standards of cleanliness and maintenance are upheld, budgets are controlled and any problems are quickly rectified.
-                                    </small></p>
-                                </div>
-                            </div>
-                        </li>
-                       
-                        <li >
-                            <div class="timeline-badge success" style="background-color: #283990 !important;">
-                                <i class="glyphicon glyphicon-briefcase"></i>
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4 class="timeline-title"> Ministry of Finance & Ministry of State Modernization and Public Administration </h4>
-                                    <p>
-                                        <small class="text-muted">
-                                            <span class="glyphicon glyphicon-time"></span>NOV 2020 - JUN 2023</small>
-                                    </p>
-                                </div>
-                                <div class="timeline-body">
-                                    <p><small>Special Advisor of Assistent Secretary of State for Administrative
-                                            Modernization & from May 2021 - Special Advisor of Minister of State Modernization and Public Administration</small></p>
+                                <div class="tl-item__body-wrap">
+                                    <div class="tl-item__body-inner">
+                                        <p class="tl-item__body">Supervisor de Gestão de Projetos Empresariais, Direção de Clientes Empresariais, at CVTelecom in Praia - Cabo Verde.</p>
+                                    </div>
                                 </div>
                             </div>
                         </li>
 
-                        <li class="timeline-inverted">
-                            <div class="timeline-badge success">
-                                <i class="glyphicon glyphicon-briefcase"></i>
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4 class="timeline-title">Finance Ministry of Cabo Verde</h4>
-                                    <p>
-                                        <small class="text-muted">
-                                            <span class="glyphicon glyphicon-time"></span>JUL 2019 - NOV 2020</small>
-                                    </p>
+                        <li class="tl-item tl-item--professional" data-category="professional">
+                            <span class="tl-item__dot"><i class="glyphicon glyphicon-briefcase"></i></span>
+                            <div class="tl-item__card" role="button" tabindex="0" aria-expanded="false">
+                                <div class="tl-item__head">
+                                    <div class="tl-item__heading">
+                                        <h4 class="tl-item__title">Cabo Verde Telecom</h4>
+                                        <span class="tl-item__date">Oct 2023 – Jun 2026</span>
+                                    </div>
+                                    <span class="tl-item__chevron"><i class="glyphicon glyphicon-chevron-down"></i></span>
                                 </div>
-                                <div class="timeline-body">
-                                    <p><small>Advisor of Assistent Secretary of State for Administrative
-                                            Modernization</small></p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timeline-badge success" style="background-color: #e6540f !important;">
-                                <i class="glyphicon glyphicon-briefcase"></i>
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4 class="timeline-title">Unitel T+</h4>
-                                    <p>
-                                        <small class="text-muted">
-                                            <span class="glyphicon glyphicon-time"></span>MARCH 2019 - 01/MAY 2019</small>
-                                    </p>
-                                </div>
-                                <div class="timeline-body">
-                                    <p><small>Worked at Unitel T+ (Telecom Company) based in Praia - Cabo Verde for 2 months, as Product & Service Technician with the emphasis on managing the BI
-                                            System of the Company to provide support on Marketing and Product launching decisions</small></p>
+                                <div class="tl-item__body-wrap">
+                                    <div class="tl-item__body-inner">
+                                        <p class="tl-item__body">Engineering Projects Manager at the Department of Engineer and Investments of CVT in Praia - Cabo Verde.</p>
+                                    </div>
                                 </div>
                             </div>
                         </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-badge success">
-                                <i class="glyphicon glyphicon-briefcase"></i>
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4 class="timeline-title">Freelancer</h4>
-                                    <p>
-                                        <small class="text-muted">
-                                            <span class="glyphicon glyphicon-time"></span>JAN 2019 - MARCH 2019</small>
-                                    </p>
+
+                        <li class="tl-item tl-item--professional" data-category="professional">
+                            <span class="tl-item__dot"><i class="glyphicon glyphicon-briefcase"></i></span>
+                            <div class="tl-item__card" role="button" tabindex="0" aria-expanded="true">
+                                <div class="tl-item__head">
+                                    <div class="tl-item__heading">
+                                        <h4 class="tl-item__title"><a href="https://cantinhoc.cv/" target="_blank" rel="noopener noreferrer">Cantinho C Alojamento Complementar</a></h4>
+                                        <span class="tl-item__date">Jun 2019 – Present</span>
+                                    </div>
+                                    <span class="tl-item__chevron"><i class="glyphicon glyphicon-chevron-down"></i></span>
                                 </div>
-                                <div class="timeline-body">
-                                    <p><small>Design of Employee Cards (photography included) and Services Plan
-                                            for a Cleaning and a Pest Control business</small></p>
-                                    <p><small>Social Media Management for Artist Valdirdivad, Maravilhas de Cabo Verde,
-                                            Bom Ki Bali and Vip S&S Fashion</small></p>
+                                <div class="tl-item__body-wrap">
+                                    <div class="tl-item__body-inner">
+                                        <p class="tl-item__body">General Manager in charge of a small BnB in Praia - Cabo Verde, responsible for the efficient running of your establishment. This includes ensuring standards of cleanliness and maintenance are upheld, budgets are controlled and any problems are quickly rectified.</p>
+                                    </div>
                                 </div>
                             </div>
                         </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-badge success ">
-                                <i class="glyphicon glyphicon-plane"></i>
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4 class="timeline-title">Moved to Cabo Verde</h4>
-                                    <p>
-                                        <small class="text-muted">
-                                            <i class="glyphicon glyphicon-time"></i>DEC 2018</small>
-                                    </p>
+
+                        <li class="tl-item tl-item--professional" data-category="professional">
+                            <span class="tl-item__dot"><i class="glyphicon glyphicon-briefcase"></i></span>
+                            <div class="tl-item__card" role="button" tabindex="0" aria-expanded="false">
+                                <div class="tl-item__head">
+                                    <div class="tl-item__heading">
+                                        <h4 class="tl-item__title">Ministry of Finance &amp; Ministry of State Modernization and Public Administration</h4>
+                                        <span class="tl-item__date">Nov 2020 – Jun 2023</span>
+                                    </div>
+                                    <span class="tl-item__chevron"><i class="glyphicon glyphicon-chevron-down"></i></span>
                                 </div>
-                                <div class="timeline-body">
-                                    <p><small>Return to homeland Praia - Cabo Verde</small></p>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timeline-badge success">
-                                <i class="glyphicon glyphicon-briefcase"></i>
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4 class="timeline-title">University of Minho Library</h4>
-                                    <p>
-                                        <small class="text-muted">
-                                            <span class="glyphicon glyphicon-time"></span>MAY 2016 - JUL 2017</small>
-                                    </p>
-                                </div>
-                                <div class="timeline-body">
-                                    <p><small>Performed various support tasks as Library Helpdesk staff element</small>
-                                    </p>
+                                <div class="tl-item__body-wrap">
+                                    <div class="tl-item__body-inner">
+                                        <p class="tl-item__body">Special Advisor of Assistent Secretary of State for Administrative Modernization &amp; from May 2021 - Special Advisor of Minister of State Modernization and Public Administration.</p>
+                                    </div>
                                 </div>
                             </div>
                         </li>
-                        <li>
-                            <div class="timeline-badge success"><i class="glyphicon glyphicon-thumbs-up"></i></div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4 class="timeline-title">University</h4>
-                                    <p>
-                                        <small class="text-muted">
-                                            <span class="glyphicon glyphicon-time"></span>SEPT 2013 - 2018</small>
-                                    </p>
+
+                        <li class="tl-item tl-item--professional" data-category="professional">
+                            <span class="tl-item__dot"><i class="glyphicon glyphicon-briefcase"></i></span>
+                            <div class="tl-item__card" role="button" tabindex="0" aria-expanded="false">
+                                <div class="tl-item__head">
+                                    <div class="tl-item__heading">
+                                        <h4 class="tl-item__title">Finance Ministry of Cabo Verde</h4>
+                                        <span class="tl-item__date">Jul 2019 – Nov 2020</span>
+                                    </div>
+                                    <span class="tl-item__chevron"><i class="glyphicon glyphicon-chevron-down"></i></span>
                                 </div>
-                                <div class="timeline-body">
-                                    <p><small>Enrolled in Integrated Master in Engineering and Management of Information
-                                            Systems - University of Minho, since 2013 and finished on Dec 2018</small>
-                                    </p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-badge success">
-                                <i class="glyphicon glyphicon-map-marker"></i>
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4 class="timeline-title">New City</h4>
-                                    <p>
-                                        <small class="text-muted">
-                                            <i class="glyphicon glyphicon-time"></i>SEPT 2013</small>
-                                    </p>
-                                </div>
-                                <div class="timeline-body">
-                                    <p><small>Changed my residence to Guimarães-Portugal</small></p>
+                                <div class="tl-item__body-wrap">
+                                    <div class="tl-item__body-inner">
+                                        <p class="tl-item__body">Advisor of Assistent Secretary of State for Administrative Modernization.</p>
+                                    </div>
                                 </div>
                             </div>
                         </li>
-                        <li class="timeline-badge">
-                            <div class="timeline-badge info"><i class="glyphicon glyphicon-floppy-disk"></i></div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4 class="timeline-title">Study Abroad</h4>
-                                    <p>
-                                        <small class="text-muted">
-                                            <i class="glyphicon glyphicon-time"></i>SEPT 2011 - 2013</small>
-                                    </p>
+
+                        <li class="tl-item tl-item--professional" data-category="professional">
+                            <span class="tl-item__dot"><i class="glyphicon glyphicon-briefcase"></i></span>
+                            <div class="tl-item__card" role="button" tabindex="0" aria-expanded="false">
+                                <div class="tl-item__head">
+                                    <div class="tl-item__heading">
+                                        <h4 class="tl-item__title">Unitel T+</h4>
+                                        <span class="tl-item__date">Mar 2019 – May 2019</span>
+                                    </div>
+                                    <span class="tl-item__chevron"><i class="glyphicon glyphicon-chevron-down"></i></span>
                                 </div>
-                                <div class="timeline-body">
-                                    <p><small>Enrolled 2 years in CS bachelor at University of Minho, where i learned
-                                            some of the basics of CS like data structures, algorithmic complexity,
-                                            imperical programming, functional programming, graphs, etc. But i opted to
-                                            change course due to the versatility and opportunities presented by the IS
-                                            course at University of Minho</small> </p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-badge success ">
-                                <i class="glyphicon glyphicon-plane"></i>
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4 class="timeline-title">Moved to Portugal</h4>
-                                    <p>
-                                        <small class="text-muted">
-                                            <i class="glyphicon glyphicon-time"></i>SEPT 2011</small>
-                                    </p>
-                                </div>
-                                <div class="timeline-body">
-                                    <p><small>Started my journey abroad, moving to Braga, Portugal</small></p>
+                                <div class="tl-item__body-wrap">
+                                    <div class="tl-item__body-inner">
+                                        <p class="tl-item__body">Worked at Unitel T+ (Telecom Company) based in Praia - Cabo Verde for 2 months, as Product &amp; Service Technician with the emphasis on managing the BI System of the Company to provide support on Marketing and Product launching decisions.</p>
+                                    </div>
                                 </div>
                             </div>
                         </li>
-                        <li>
-                            <div class="timeline-badge success"><i class="glyphicon glyphicon-thumbs-up"></i></div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4 class="timeline-title">Finished High School</h4>
-                                    <p>
-                                        <small class="text-muted">
-                                            <span class="glyphicon glyphicon-time"></span>SEPT 2005 - 2011</small>
-                                    </p>
+
+                        <li class="tl-item tl-item--professional" data-category="professional">
+                            <span class="tl-item__dot"><i class="glyphicon glyphicon-briefcase"></i></span>
+                            <div class="tl-item__card" role="button" tabindex="0" aria-expanded="false">
+                                <div class="tl-item__head">
+                                    <div class="tl-item__heading">
+                                        <h4 class="tl-item__title">Freelancer</h4>
+                                        <span class="tl-item__date">Jan 2019 – Mar 2019</span>
+                                    </div>
+                                    <span class="tl-item__chevron"><i class="glyphicon glyphicon-chevron-down"></i></span>
                                 </div>
-                                <div class="timeline-body">
-                                    <p><small>I finished my secondary education at Science and Technology field in Cabo
-                                            Verde</small> </p>
+                                <div class="tl-item__body-wrap">
+                                    <div class="tl-item__body-inner">
+                                        <p class="tl-item__body">Design of Employee Cards (photography included) and Services Plan for a Cleaning and a Pest Control business.</p>
+                                        <p class="tl-item__body">Social Media Management for Artist Valdirdivad, Maravilhas de Cabo Verde, Bom Ki Bali and Vip S&amp;S Fashion.</p>
+                                    </div>
                                 </div>
                             </div>
                         </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-badge success">
-                                <i class="glyphicon glyphicon-baby-formula"></i>
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4 class="timeline-title">Born</h4>
-                                    <p>
-                                        <small class="text-muted">
-                                            <span class="glyphicon glyphicon-time"></span>JAN 1994</small>
-                                    </p>
+
+                        <li class="tl-item tl-item--personal" data-category="personal">
+                            <span class="tl-item__dot"><i class="glyphicon glyphicon-plane"></i></span>
+                            <div class="tl-item__card" role="button" tabindex="0" aria-expanded="false">
+                                <div class="tl-item__head">
+                                    <div class="tl-item__heading">
+                                        <h4 class="tl-item__title">Moved to Cabo Verde</h4>
+                                        <span class="tl-item__date">Dec 2018</span>
+                                    </div>
+                                    <span class="tl-item__chevron"><i class="glyphicon glyphicon-chevron-down"></i></span>
                                 </div>
-                                <div class="timeline-body">
-                                    <p><small>In Cape Verde, Praia City in Santiago island</small>
-                                        <i class="em em-flag-cv"></i>
-                                    </p>
+                                <div class="tl-item__body-wrap">
+                                    <div class="tl-item__body-inner">
+                                        <p class="tl-item__body">Return to homeland Praia - Cabo Verde.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="tl-item tl-item--professional" data-category="professional">
+                            <span class="tl-item__dot"><i class="glyphicon glyphicon-briefcase"></i></span>
+                            <div class="tl-item__card" role="button" tabindex="0" aria-expanded="false">
+                                <div class="tl-item__head">
+                                    <div class="tl-item__heading">
+                                        <h4 class="tl-item__title">University of Minho Library</h4>
+                                        <span class="tl-item__date">May 2016 – Jul 2017</span>
+                                    </div>
+                                    <span class="tl-item__chevron"><i class="glyphicon glyphicon-chevron-down"></i></span>
+                                </div>
+                                <div class="tl-item__body-wrap">
+                                    <div class="tl-item__body-inner">
+                                        <p class="tl-item__body">Performed various support tasks as Library Helpdesk staff element.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="tl-item tl-item--academic" data-category="academic">
+                            <span class="tl-item__dot"><i class="glyphicon glyphicon-thumbs-up"></i></span>
+                            <div class="tl-item__card" role="button" tabindex="0" aria-expanded="false">
+                                <div class="tl-item__head">
+                                    <div class="tl-item__heading">
+                                        <h4 class="tl-item__title">University</h4>
+                                        <span class="tl-item__date">Sept 2013 – 2018</span>
+                                    </div>
+                                    <span class="tl-item__chevron"><i class="glyphicon glyphicon-chevron-down"></i></span>
+                                </div>
+                                <div class="tl-item__body-wrap">
+                                    <div class="tl-item__body-inner">
+                                        <p class="tl-item__body">Enrolled in Integrated Master in Engineering and Management of Information Systems - University of Minho, since 2013 and finished on Dec 2018.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="tl-item tl-item--personal" data-category="personal">
+                            <span class="tl-item__dot"><i class="glyphicon glyphicon-map-marker"></i></span>
+                            <div class="tl-item__card" role="button" tabindex="0" aria-expanded="false">
+                                <div class="tl-item__head">
+                                    <div class="tl-item__heading">
+                                        <h4 class="tl-item__title">New City</h4>
+                                        <span class="tl-item__date">Sept 2013</span>
+                                    </div>
+                                    <span class="tl-item__chevron"><i class="glyphicon glyphicon-chevron-down"></i></span>
+                                </div>
+                                <div class="tl-item__body-wrap">
+                                    <div class="tl-item__body-inner">
+                                        <p class="tl-item__body">Changed my residence to Guimarães-Portugal.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="tl-item tl-item--academic" data-category="academic">
+                            <span class="tl-item__dot"><i class="glyphicon glyphicon-floppy-disk"></i></span>
+                            <div class="tl-item__card" role="button" tabindex="0" aria-expanded="false">
+                                <div class="tl-item__head">
+                                    <div class="tl-item__heading">
+                                        <h4 class="tl-item__title">Study Abroad</h4>
+                                        <span class="tl-item__date">Sept 2011 – 2013</span>
+                                    </div>
+                                    <span class="tl-item__chevron"><i class="glyphicon glyphicon-chevron-down"></i></span>
+                                </div>
+                                <div class="tl-item__body-wrap">
+                                    <div class="tl-item__body-inner">
+                                        <p class="tl-item__body">Enrolled 2 years in CS bachelor at University of Minho, where i learned some of the basics of CS like data structures, algorithmic complexity, imperical programming, functional programming, graphs, etc. But i opted to change course due to the versatility and opportunities presented by the IS course at University of Minho.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="tl-item tl-item--personal" data-category="personal">
+                            <span class="tl-item__dot"><i class="glyphicon glyphicon-plane"></i></span>
+                            <div class="tl-item__card" role="button" tabindex="0" aria-expanded="false">
+                                <div class="tl-item__head">
+                                    <div class="tl-item__heading">
+                                        <h4 class="tl-item__title">Moved to Portugal</h4>
+                                        <span class="tl-item__date">Sept 2011</span>
+                                    </div>
+                                    <span class="tl-item__chevron"><i class="glyphicon glyphicon-chevron-down"></i></span>
+                                </div>
+                                <div class="tl-item__body-wrap">
+                                    <div class="tl-item__body-inner">
+                                        <p class="tl-item__body">Started my journey abroad, moving to Braga, Portugal.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="tl-item tl-item--academic" data-category="academic">
+                            <span class="tl-item__dot"><i class="glyphicon glyphicon-thumbs-up"></i></span>
+                            <div class="tl-item__card" role="button" tabindex="0" aria-expanded="false">
+                                <div class="tl-item__head">
+                                    <div class="tl-item__heading">
+                                        <h4 class="tl-item__title">Finished High School</h4>
+                                        <span class="tl-item__date">Sept 2005 – 2011</span>
+                                    </div>
+                                    <span class="tl-item__chevron"><i class="glyphicon glyphicon-chevron-down"></i></span>
+                                </div>
+                                <div class="tl-item__body-wrap">
+                                    <div class="tl-item__body-inner">
+                                        <p class="tl-item__body">I finished my secondary education at Science and Technology field in Cabo Verde.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="tl-item tl-item--personal" data-category="personal">
+                            <span class="tl-item__dot"><i class="glyphicon glyphicon-baby-formula"></i></span>
+                            <div class="tl-item__card" role="button" tabindex="0" aria-expanded="false">
+                                <div class="tl-item__head">
+                                    <div class="tl-item__heading">
+                                        <h4 class="tl-item__title">Born</h4>
+                                        <span class="tl-item__date">Jan 1994</span>
+                                    </div>
+                                    <span class="tl-item__chevron"><i class="glyphicon glyphicon-chevron-down"></i></span>
+                                </div>
+                                <div class="tl-item__body-wrap">
+                                    <div class="tl-item__body-inner">
+                                        <p class="tl-item__body">In Cape Verde, Praia City in Santiago island <i class="em em-flag-cv"></i></p>
+                                    </div>
                                 </div>
                             </div>
                         </li>
@@ -481,252 +464,71 @@
         </div>
         <section class="section" id="section-3">
             <div class="container">
-                <div class="services-content">
-                   <div class="row text-center">
-                        <br>
-                        <div class="col-md-4 col-sm-4">
-                            <p>
-                                <h2>Experience</h2>
-                            </p>
-                            <legend>
-                                <small class="text-muted">Academic&Professional/Freelancer Context</small>
-                            </legend>
-                            <br />
-                            <div class="skillbar" data-percent="80%">
-                                <div class="skillbar-title">Project Management</div>
-                                <div class="skill-bar-percent">Proficient</div>
-                                <div class="skillbar-bar1" style="width: 80%;"></div>
-                            </div>
-                            <div class="skillbar" data-percent="80%">
-                                <div class="skillbar-title">Web Apps Development</div>
-                                <div class="skill-bar-percent">Proficient</div>
-                                <div class="skillbar-bar1" style="width: 80%;"></div>
-                            </div>
-                            <div class="skillbar" data-percent="70%">
-                                <div class="skillbar-title">Social Media Management</div>
-                                <div class="skill-bar-percent">Intermediate</div>
-                                <div class="skillbar-bar1" style="width: 70%;"></div>
-                            </div>
-                            <div class="skillbar" data-percent="60%">
-                                <div class="skillbar-title">Graphic Design</div>
-                                <div class="skill-bar-percent">Advanced</div>
-                                <div class="skillbar-bar1" style="width: 65%;"></div>
-                            </div>
-                            <div class="skillbar" data-percent="50%">
-                                <div class="skillbar-title">Marketing Manager at airbnb & booking</div>
-                                <div class="skill-bar-percent">Intermediate</div>
-                                <div class="skillbar-bar1" style="width: 50%;"></div>
-                            </div>
-                            <div class="skillbar" data-percent="40%">
-                                <div class="skillbar-title">Desktop Apps development</div>
-                                <div class="skill-bar-percent">Intermediate</div>
-                                <div class="skillbar-bar1" style="width: 40%;"></div>
-                            </div>
-                            <div class="skillbar" data-percent="50%">
-                                <div class="skillbar-title">Data Mining</div>
-                                <div class="skill-bar-percent">Intermediate</div>
-                                <div class="skillbar-bar1" style="width: 50%;"></div>
-                            </div>
-                            <div class="skillbar" data-percent="80%">
-                                <div class="skillbar-title">Business Requirements/Process analyst</div>
-                                <div class="skill-bar-percent">Proficient</div>
-                                <div class="skillbar-bar1" style="width: 80%;"></div>
-                            </div>
-                            <div class="skillbar" data-percent="80%">
-                                <div class="skillbar-title">Data Warehousing/BI</div>
-                                <div class="skill-bar-percent">Proficient</div>
-                                <div class="skillbar-bar1" style="width: 80%;"></div>
-                            </div>
+                <div class="skills-modern">
+                    <div class="skills-group skills-group--navy">
+                        <h3 class="skills-group__title">Experience</h3>
+                        <div class="skills-pills">
+                            <span class="skill-pill">Project Management</span>
+                            <span class="skill-pill">Web Apps Development</span>
+                            <span class="skill-pill">Social Media Management</span>
+                            <span class="skill-pill">Graphic Design</span>
+                            <span class="skill-pill">Data Mining</span>
+                            <span class="skill-pill">Business Requirements &amp; Process Analysis</span>
+                            <span class="skill-pill">Data Warehousing / BI</span>
+                            <span class="skill-pill">E-Gov</span>
                         </div>
-                        <div class="col-md-4 col-sm-4">
-                            <p>
-                                <h2>Languages</h2>
-                                <legend>
-                                    <small class="text-muted">Frameworks &amp; CMS included</small>
-                                </legend>
-                            </p>
-                            <br />
-                            <div class="skillbar" data-percent="90%">
-                                <div class="skillbar-title">PHP/Laravel#Wordpress</div>
-                                <div class="skill-bar-percent">Proficient</div>
-                                <div class="skillbar-bar3" style="width: 90%;"></div>
-                            </div>
-                            <div class="skillbar" data-percent="60%">
-                                <div class="skillbar-title">Python</div>
-                                <div class="skill-bar-percent">Intermediate</div>
-                                <div class="skillbar-bar3" style="width: 60%;"></div>
-                            </div>
-                            <div class="skillbar" data-percent="90%">
-                                <div class="skillbar-title">HTML</div>
-                                <div class="skill-bar-percent">Proficient</div>
-                                <div class="skillbar-bar3" style="width: 90%;"></div>
-                            </div>
-                            <div class="skillbar" data-percent="90%">
-                                <div class="skillbar-title">CSS</div>
-                                <div class="skill-bar-percent">Proficient</div>
-                                <div class="skillbar-bar3" style="width: 90%;"></div>
-                            </div>
-                            <div class="skillbar" data-percent="80%">
-                                <div class="skillbar-title"> Javascript</div>
-                                <div class="skill-bar-percent">Proficient</div>
-                                <div class="skillbar-bar3" style="width: 80%;"></div>
-                            </div>
-                            <div class="skillbar" data-percent="70%">
-                                <div class="skillbar-title">SQL</div>
-                                <div class="skill-bar-percent">Intermediate</div>
-                                <div class="skillbar-bar3" style="width: 70%;"></div>
-                            </div>
-                            <div class="skillbar" data-percent="70%">
-                                <div class="skillbar-title">DAX</div>
-                                <div class="skill-bar-percent">Intermediate</div>
-                                <div class="skillbar-bar3" style="width: 60%;"></div>
-                            </div>
-                            <div class="skillbar" data-percent="78%">
-                                <div class="skillbar-title">Java</div>
-                                <div class="skill-bar-percent">Advanced</div>
-                                <div class="skillbar-bar3" style="width: 78%;"></div>
-                            </div>
-                            <div class="skillbar" data-percent="76%">
-                                <div class="skillbar-title">R</div>
-                                <div class="skill-bar-percent">Advanced</div>
-                                <div class="skillbar-bar3" style="width: 76%;"></div>
-                            </div>
+                    </div>
+                    <div class="skills-group skills-group--orange">
+                        <h3 class="skills-group__title">Technical Skills</h3>
+                        <div class="skills-pills">
+                            <span class="skill-pill">PHP / Laravel</span>
+                            <span class="skill-pill">JavaScript</span>
+                            <span class="skill-pill">HTML</span>
+                            <span class="skill-pill">CSS</span>
+                            <span class="skill-pill">SQL</span>
+                            <span class="skill-pill">Java</span>
+                            <span class="skill-pill">R</span>
+                            <span class="skill-pill">Python</span>
                         </div>
-                            <div class="row text-center"> 
-            
-                        <div class="col-md-4 col-sm-4">
-                            <p>
-                                <h2>Tools</h2>
-                                <legend>
-                                    <small class="text-muted">See my CV for more</small>
-                                </legend>
-                            </p>
-                            <br />
-                            <div class="skillbar" data-percent="90%">
-                                <div class="skillbar-title">Git & Github</div>
-                                <div class="skill-bar-percent">Proficient</div>
-                                <div class="skillbar-bar2" style="width: 90%;"></div>
-                            </div>
-                            <div class="skillbar" data-percent="90%">
-                                <div class="skillbar-title">SQL Server</div>
-                                <div class="skill-bar-percent">Proficient</div>
-                                <div class="skillbar-bar2" style="width: 90%;"></div>
-                            </div>
-                            <div class="skillbar" data-percent="90%">
-                                <div class="skillbar-title">SSIS Visual Studio</div>
-                                <div class="skill-bar-percent">Proficient</div>
-                                <div class="skillbar-bar2" style="width: 90%;"></div>
-                            </div>
-                            <div class="skillbar" data-percent="90%">
-                                <div class="skillbar-title">VS Code/Sublime/Netbeans</div>
-                                <div class="skill-bar-percent">Proficient</div>
-                                <div class="skillbar-bar2" style="width: 90%;"></div>
-                            </div>
-                            <div class="skillbar" data-percent="85%">
-                                <div class="skillbar-title">Power BI</div>
-                                <div class="skill-bar-percent">Advance</div>
-                                <div class="skillbar-bar2" style="width: 85%;"></div>
-                            </div>
-                            <div class="skillbar" data-percent="70%">
-                                <div class="skillbar-title">Rapid Miner</div>
-                                <div class="skill-bar-percent">Intermediate</div>
-                                <div class="skillbar-bar2" style="width: 70%;"></div>
-                            </div>
-                            <div class="skillbar" data-percent="95%">
-                                <div class="skillbar-title">MS Excel/Word/Ppt/Project</div>
-                                <div class="skill-bar-percent">Proficient</div>
-                                <div class="skillbar-bar2" style="width: 95%;"></div>
-                            </div>
-                            <div class="skillbar" data-percent="60%">
-                                <div class="skillbar-title">Adobe Photoshop/Illustrator</div>
-                                <div class="skill-bar-percent">Intermediate</div>
-                                <div class="skillbar-bar2" style="width: 60%;"></div>
-                            </div>
-                            <div class="skillbar" data-percent="90%">
-                                <div class="skillbar-title">Windows/Ubuntu</div>
-                                <div class="skill-bar-percent">Proficient</div>
-                                <div class="skillbar-bar2" style="width: 90%;"></div>
-                            </div>
-                            <div class="skillbar" data-percent="90%">
-                                <div class="skillbar-title">Bizagi Modeler</div>
-                                <div class="skill-bar-percent">Proficient</div>
-                                <div class="skillbar-bar2" style="width: 90%;"></div>
-                            </div>
+                    </div>
+                    <div class="skills-group skills-group--purple">
+                        <h3 class="skills-group__title">Tools &amp; Platforms</h3>
+                        <div class="skills-pills">
+                            <span class="skill-pill">Git &amp; GitHub</span>
+                            <span class="skill-pill">Visual Studio Code</span>
+                            <span class="skill-pill">Power BI</span>
+                            <span class="skill-pill">MS Office Tools</span>
+                            <span class="skill-pill">Adobe Photoshop / Illustrator</span>
+                            <span class="skill-pill">UML / BPMN</span>
+                            <span class="skill-pill">Power Apps</span>
+                            <span class="skill-pill">Power Automate</span>
+                            <span class="skill-pill">Trello (Agile PM)</span>
+                            <span class="skill-pill">Claude Code</span>
+                            <span class="skill-pill">ChatGPT</span>
+                            <span class="skill-pill">GitHub Copilot</span>
+                            <span class="skill-pill">OpenAI Codex</span>
                         </div>
-                        <div class="col-md-4 col-sm-4">
-                            <p>
-                                <h2>Lingos</h2>
-                            </p>
-                            <br />
-                            <div class="skillbar" data-percent="100%">
-                                <div class="skillbar-title">Cape Verdean Creole
-                                    <i class="em em-flag-cv"></i>
-                                </div>
-                                <div class="skill-bar-percent">Native Language</div>
-                                <div class="skillbar-bar" style="width: 100%;"></div>
-                            </div>
-                            <div class="skillbar" data-percent="100%">
-                                <div class="skillbar-title">Portuguese
-                                    <i class="em em-flag-pt"></i>
-                                </div>
-                                <div class="skill-bar-percent">Native Language</div>
-                                <div class="skillbar-bar" style="width: 100%;"></div>
-                            </div>
-                            <div class="skillbar" data-percent="90%">
-                                <div class="skillbar-title">English
-                                    <i class="em em-flag-england"></i>
-                                </div>
-                                <div class="skill-bar-percent">B2+ - Advance </div>
-                                <div class="skillbar-bar" style="width: 90%;"></div>
-                            </div>
-                            <div class="skillbar" data-percent="70%">
-                                <div class="skillbar-title">Spanish
-                                    <i class="em em-es"></i>
-                                </div>
-                                <div class="skill-bar-percent">B1 </div>
-                                <div class="skillbar-bar" style="width: 70%;"></div>
-                            </div>
-                            <div class="skillbar" data-percent="40%">
-                                <div class="skillbar-title">Deutsch/German
-                                    <i class="em em-de"></i>
-                                </div>
-                                <div class="skill-bar-percent">A1 - Basic</div>
-                                <div class="skillbar-bar" style="width: 40%;"></div>
-                            </div>
-                            <div class="skillbar" data-percent="40%">
-                                <div class="skillbar-title">French
-                                    <i class="em em-fr"></i>
-                                </div>
-                                <div class="skill-bar-percent">A1 - Basic</div>
-                                <div class="skillbar-bar" style="width: 40%;"></div>
-                            </div>
+                    </div>
+                    <div class="skills-group skills-group--navy">
+                        <h3 class="skills-group__title">Languages</h3>
+                        <div class="skills-pills">
+                            <span class="skill-pill skill-pill--lang"><i class="em em-flag-cv"></i> Cabo Verdean Creole <span class="skill-pill__level">Native</span></span>
+                            <span class="skill-pill skill-pill--lang"><i class="em em-flag-pt"></i> Portuguese <span class="skill-pill__level">Native</span></span>
+                            <span class="skill-pill skill-pill--lang"><i class="em em-flag-england"></i> English <span class="skill-pill__level">B2+</span></span>
+                            <span class="skill-pill skill-pill--lang"><i class="em em-es"></i> Spanish <span class="skill-pill__level">A2</span></span>
+                            <span class="skill-pill skill-pill--lang"><i class="em em-de"></i> Deutsch/German <span class="skill-pill__level">A1</span></span>
                         </div>
-                        <div class="col-md-4 col-sm-4">
-                            <p>
-                                <h2>Soft Skills</h2>
-                            </p>
-                            <br />
-                            <div class="skillbar" data-percent="80%">
-                                <div class="skillbar-title">Time Management</div>
-                                <div class="skill-bar-percent">80%</div>
-                                <div class="skillbar-bar" style="width: 80%;"></div>
-                            </div>
-                            <div class="skillbar" data-percent="80%">
-                                <div class="skillbar-title">Team Player</div>
-                                <div class="skill-bar-percent">80%</div>
-                                <div class="skillbar-bar" style="width: 80%;"></div>
-                            </div>
-                            <div class="skillbar" data-percent="85%">
-                                <div class="skillbar-title">Problem-Solving</div>
-                                <div class="skill-bar-percent">80%</div>
-                                <div class="skillbar-bar" style="width: 85%;"></div>
-                            </div>
-                          
-                            <div class="skillbar" data-percent="85%">
-                                <div class="skillbar-title">Communication</div>
-                                <div class="skill-bar-percent">85%</div>
-                                <div class="skillbar-bar" style="width: 85%;"></div>
-                            </div>
+                    </div>
+                    <div class="skills-group skills-group--orange">
+                        <h3 class="skills-group__title">Soft Skills</h3>
+                        <div class="skills-pills">
+                            <span class="skill-pill skill-pill--soft">Leadership</span>
+                            <span class="skill-pill skill-pill--soft">Negotiation &amp; Influence</span>
+                            <span class="skill-pill skill-pill--soft">Critical Thinking</span>
+                            <span class="skill-pill skill-pill--soft">Sense of Mission</span>
+                            <span class="skill-pill skill-pill--soft">Continuous Learning</span>
+                            <span class="skill-pill skill-pill--soft">Analytical Skills</span>
+                            <span class="skill-pill skill-pill--soft">Emotional Intelligence</span>
                         </div>
                     </div>
                 </div>
@@ -743,49 +545,126 @@
         <section class="section" id="section-4">
             <div class="container">
                 <div class="row featured-projects">
-                    <div class="col-md-4 col-sm-12">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4>Simulador Crédito CV</h4>
-                            </div>
-                            <div class="panel-body">
-                                <p><small><strong>Problema:</strong> Falta de uma ferramenta acessível para calcular o custo real de um crédito em Cabo Verde — não só a mensalidade, mas a TAEG (Taxa Anual de Encargos Efetiva Global), que reflete despesas e seguros.</small></p>
-                                <p><small><strong>Solução:</strong> Aplicação web com sliders interativos para simular mensalidades e TAEG, tabelas de amortização expansíveis, comparação de cenários lado a lado, interface bilingue (PT/EN) e modo escuro. Todo o cálculo corre no browser — nenhum dado é enviado para um servidor — e instala-se como PWA para uso offline.</small></p>
-                                <p><small><strong>Tecnologias:</strong> HTML5, CSS3, JavaScript (Vanilla, ES6+), PWA / Service Worker.</small></p>
-                                <p><small><strong>Resultado:</strong> Versão 4.0, activamente mantida, instalável em Android/iOS/desktop, suportada em Chrome, Firefox, Safari e Edge. <em>[CONFIRMAR COM MÁRIO: nº de utilizadores/adoção]</em></small></p>
-                                <p><small><a rel="noreferrer" href="https://marovski.github.io/simuladorcreditoCV/" target="_blank" aria-label="Ver Simulador Crédito CV">Ver projecto →</a></small></p>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="fp-card fp-card--navy">
+                            <div class="fp-card__accent"></div>
+                            <div class="fp-card__body">
+                                <h4 class="fp-card__title">Simulador Crédito CV</h4>
+                                <div class="fp-field">
+                                    <span class="fp-field__label">Problema</span>
+                                    <p class="fp-field__text">Falta de uma ferramenta acessível para calcular o custo real de um crédito em Cabo Verde — não só a mensalidade, mas a TAEG (Taxa Anual de Encargos Efetiva Global), que reflete despesas e seguros.</p>
+                                </div>
+                                <div class="fp-field">
+                                    <span class="fp-field__label">Solução</span>
+                                    <p class="fp-field__text">Aplicação web com sliders interativos para simular mensalidades e TAEG, tabelas de amortização expansíveis, comparação de cenários lado a lado, interface bilingue (PT/EN) e modo escuro. Todo o cálculo corre no browser — nenhum dado é enviado para um servidor — e instala-se como PWA para uso offline.</p>
+                                </div>
+                                <div class="fp-field">
+                                    <span class="fp-field__label">Tecnologias</span>
+                                    <div class="fp-tags">
+                                        <span class="fp-tag">HTML5</span>
+                                        <span class="fp-tag">CSS3</span>
+                                        <span class="fp-tag">JavaScript ES6+</span>
+                                        <span class="fp-tag">PWA</span>
+                                    </div>
+                                </div>
+                                <div class="fp-field">
+                                    <span class="fp-field__label">Resultado</span>
+                                    <p class="fp-field__text">Versão 4.0, activamente mantida, instalável em Android/iOS/desktop, suportada em Chrome, Firefox, Safari e Edge. Mais de 430 utilizadores activos e 1.200 visualizações desde o início do ano.</p>
+                                </div>
+                                <div class="fp-card__footer">
+                                    <a rel="noreferrer" href="https://marovski.github.io/simuladorcreditoCV/" target="_blank" class="fp-card__cta" aria-label="Ver Simulador Crédito CV">Ver projecto <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-12">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4>Cantinho C — Plataforma de Reservas</h4>
-                            </div>
-                            <div class="panel-body">
-                                <p><small><strong>Problema:</strong> O Cantinho C precisava de um canal de reserva e pagamento directo, em Escudos Cabo-verdianos, sem depender apenas de canais de terceiros.</small></p>
-                                <p><small><strong>Solução:</strong> Plataforma de reservas própria com verificação de disponibilidade em tempo real, criação de reserva, iniciação e confirmação de pagamento, portal de self-service para o hóspede consultar/cancelar reservas, notificações por email e painel de administração — conteúdo gerido por CMS headless.</small></p>
-                                <p><small><strong>Tecnologias:</strong> Next.js 16, TypeScript, Tailwind CSS, Framer Motion, Sanity CMS, gateway de pagamento SISP (3D Secure) para pagamentos em CVE.</small></p>
-                                <p><small><strong>Resultado:</strong> Plataforma em produção. <em>[CONFIRMAR COM MÁRIO: métricas de reservas/adoção]</em></small></p>
-                                <p><small><a rel="noreferrer" href="https://www.cantinhoc.cv" target="_blank" aria-label="Ver Cantinho C">Ver projecto →</a></small></p>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="fp-card fp-card--orange">
+                            <div class="fp-card__accent"></div>
+                            <div class="fp-card__body">
+                                <h4 class="fp-card__title">Cantinho C — Plataforma de Reservas</h4>
+                                <div class="fp-field">
+                                    <span class="fp-field__label">Problema</span>
+                                    <p class="fp-field__text">O Cantinho C precisava de um canal de reserva e pagamento directo, em Escudos Cabo-verdianos, sem depender apenas de canais de terceiros.</p>
+                                </div>
+                                <div class="fp-field">
+                                    <span class="fp-field__label">Solução</span>
+                                    <p class="fp-field__text">Plataforma de reservas própria com verificação de disponibilidade em tempo real, criação de reserva, iniciação e confirmação de pagamento, portal de self-service para o hóspede consultar/cancelar reservas, notificações por email e painel de administração — conteúdo gerido por CMS headless.</p>
+                                </div>
+                                <div class="fp-field">
+                                    <span class="fp-field__label">Tecnologias</span>
+                                    <div class="fp-tags">
+                                        <span class="fp-tag">Next.js 16</span>
+                                        <span class="fp-tag">TypeScript</span>
+                                        <span class="fp-tag">Tailwind CSS</span>
+                                        <span class="fp-tag">Framer Motion</span>
+                                        <span class="fp-tag">Sanity CMS</span>
+                                        <span class="fp-tag">SISP (3D Secure)</span>
+                                    </div>
+                                </div>
+                                <div class="fp-field">
+                                    <span class="fp-field__label">Resultado</span>
+                                    <p class="fp-field__text">Plataforma em produção, com cerca de 30.000 ECV em receitas geradas directamente através do site.</p>
+                                </div>
+                                <div class="fp-card__footer">
+                                    <a rel="noreferrer" href="https://cantinhoc.cv" target="_blank" class="fp-card__cta" aria-label="Ver Cantinho C">Ver projecto <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-sm-12">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4>Estratégia de Governação Digital de Cabo Verde</h4>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="fp-card fp-card--purple">
+                            <div class="fp-card__accent"></div>
+                            <div class="fp-card__body">
+                                <h4 class="fp-card__title">Estratégia de Governação Digital de Cabo Verde</h4>
+                                <div class="fp-field">
+                                    <span class="fp-field__label">Problema</span>
+                                    <p class="fp-field__text">A administração pública de Cabo Verde precisava de uma estratégia coordenada de governação digital para orientar a modernização do Estado.</p>
+                                </div>
+                                <div class="fp-field">
+                                    <span class="fp-field__label">Solução</span>
+                                    <p class="fp-field__text">Como Assessor Especial no Ministério de Estado da Modernização e da Administração Pública, coordenação da elaboração da Estratégia para Governação Digital de Cabo Verde, e co-autoria e apresentação do artigo sobre a estratégia na ICEGOV 2021, a maior conferência mundial de E-Gov.</p>
+                                </div>
+                                <div class="fp-field">
+                                    <span class="fp-field__label">Papel/Contribuição</span>
+                                    <p class="fp-field__text">Coordenação de projecto (Estratégia de Governação Digital) · Co-autor e apresentador (paper ICEGOV 2021).</p>
+                                </div>
+                                <div class="fp-field">
+                                    <span class="fp-field__label">Resultado</span>
+                                    <p class="fp-field__text">Paper distinguido como "Best Industry & Public Sector Short Paper" na ICEGOV 2021; Estratégia de Governação Digital publicada oficialmente pelo Governo de Cabo Verde.</p>
+                                </div>
+                                <div class="fp-card__footer">
+                                    <div class="fp-links">
+                                        <a rel="noreferrer" href="https://dl.acm.org/doi/fullHtml/10.1145/3494193.3494312" target="_blank" aria-label="ACM Digital Library">ICEGOV 2021 ↗</a>
+                                        <a rel="noreferrer" href="https://www.governo.cv/documentos/estrategia-para-governacao-digital-de-cabo-verde/" target="_blank" aria-label="Estratégia de Governação Digital">Estratégia ↗</a>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="panel-body">
-                                <p><small><strong>Problema:</strong> A administração pública de Cabo Verde precisava de uma estratégia coordenada de governação digital e de um plano de acção estruturado para o Governo Aberto.</small></p>
-                                <p><small><strong>Solução:</strong> Como Special Advisor no Ministério de Estado da Modernização e da Administração Pública, coordenação da Estratégia de Governação Digital de Cabo Verde e co-autoria do 2º Plano de Acção Nacional de Cabo Verde para o Open Government Partnership (2023-2025).</small></p>
-                                <p><small><strong>Papel/Contribuição:</strong> Coordenação de projecto (Estratégia de Governação Digital) · Co-coordenador e co-autor (Plano de Acção Nacional OGP 2023-2025) · Co-autor (paper ICEGOV 2021).</small></p>
-                                <p><small><strong>Resultado:</strong> Paper distinguido como "Best Industry & Public Sector Short Paper" no ICEGOV 2021; Plano de Acção Nacional publicado oficialmente pela Open Government Partnership; Estratégia de Governação Digital publicada oficialmente pelo Governo de Cabo Verde.</small></p>
-                                <p><small>
-                                    <a rel="noreferrer" href="https://www.opengovpartnership.org/documents/cabo-verde-action-plan-2023-2025/" target="_blank" aria-label="Open Government Partnership">OGP</a> ·
-                                    <a rel="noreferrer" href="https://dl.acm.org/doi/fullHtml/10.1145/3494193.3494312" target="_blank" aria-label="ACM Digital Library">ICEGOV 2021</a> ·
-                                    <a rel="noreferrer" href="https://www.governo.cv/documentos/estrategia-para-governacao-digital-de-cabo-verde/" target="_blank" aria-label="Estratégia de Governação Digital">Estratégia</a>
-                                </small></p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="fp-card fp-card--navy">
+                            <div class="fp-card__accent"></div>
+                            <div class="fp-card__body">
+                                <h4 class="fp-card__title">II Plano de Ação Nacional de Governação Aberta (OGP)</h4>
+                                <div class="fp-field">
+                                    <span class="fp-field__label">Problema</span>
+                                    <p class="fp-field__text">Cabo Verde precisava de um plano de acção estruturado e alinhado aos compromissos internacionais da Open Government Partnership para avançar a agenda de Governo Aberto.</p>
+                                </div>
+                                <div class="fp-field">
+                                    <span class="fp-field__label">Solução</span>
+                                    <p class="fp-field__text">Como Assessor Especial da Secretária de Estado para Modernização Administrativa, coordenação da elaboração do II Plano de Acção Nacional de Governação Aberta de Cabo Verde (2023-2025).</p>
+                                </div>
+                                <div class="fp-field">
+                                    <span class="fp-field__label">Papel/Contribuição</span>
+                                    <p class="fp-field__text">Co-coordenador e co-autor do Plano de Acção Nacional.</p>
+                                </div>
+                                <div class="fp-field">
+                                    <span class="fp-field__label">Resultado</span>
+                                    <p class="fp-field__text">II Plano de Acção Nacional (2023-2025) publicado oficialmente pela Open Government Partnership.</p>
+                                </div>
+                                <div class="fp-card__footer">
+                                    <a rel="noreferrer" href="https://www.opengovpartnership.org/documents/cabo-verde-action-plan-2023-2025/" target="_blank" class="fp-card__cta" aria-label="Ver Plano de Acção Nacional OGP">Ver plano <i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1222,55 +1101,31 @@
           ================================================== -->
         <section class="section" id="section-5">
             <div class="container">
-                <div class="col col-md-12">
-                    <div class="col col-md-5">
-                        <div class="textcontact">
-                            <h2>Feel free to ask me anything</h2>
-                            <div class="line"></div>
-                            <p>I am a person who likes challenges and puts ideas into practice. Contact me to talk about
-                                your project. Offer me a challenge!</p>
-                            <!-- CV DOWNLOAD
-          ================================================== -->
-
-                            <div class="download-cv-icon">
-                                <a rel="noreferrer"
-                                    href="https://www.canva.com/design/DAE6PbtAEZU/QaJ584Q_9jH18-AFx_FzWg/view?utm_content=DAE6PbtAEZU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
-                                    target="_blank" style="color:darkblue;" aria-label="View my CV">
-                                    <i class="fa fa-search-plus" aria-hidden="true"></i>
-                                </a>
-                            </div>
-
-                            <strong>Check my short CV</strong>
-                        </div>
+                <div class="contact-modern">
+                    <div class="contact-modern__intro">
+                        <h2 class="contact-modern__title">Feel free to ask me anything</h2>
+                        <p class="contact-modern__text">I am a person who likes challenges and puts ideas into practice. Contact me to talk about your project. Offer me a challenge!</p>
+                        <a rel="noreferrer"
+                            href="https://www.canva.com/design/DAE6PbtAEZU/QaJ584Q_9jH18-AFx_FzWg/view?utm_content=DAE6PbtAEZU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
+                            target="_blank" class="contact-modern__cv" aria-label="View my CV">
+                            <i class="fa fa-file-text-o" aria-hidden="true"></i> Check my short CV
+                        </a>
                     </div>
-                    <div class="col col-md-7">
-                        <div class="mialeto">
-                            <div class="infomialeto">
-                                <div class="iconmail">
-                                    <div class="maileto-icon">
-                                        <i class="fa fa-envelope" aria-hidden="true"></i>
-                                    </div>
-                                    <div class="maileto-icon">
-                                        <i class="fa fa-phone" aria-hidden="true"></i>
-                                    </div>
-                                </div>
-                                <!-- CONTACT INFO
-          ================================================== -->
-                                <!--Email-->
-                                <h2>
-                                    <a rel="noreferrer" href="mailto:cardozo27cv@gmail.com" target="_blank">Email</a>
-                                </h2>
-                                <!--Email-->
-                                <br>
-                                <br />
-
-                                <h2>
-                                    <a rel="noreferrer" href="https://wa.me/002389277945" target="_blank">Call me
-                                       </a>
-                                </h2>
-                                <br />
-                            </div>
-                        </div>
+                    <div class="contact-modern__methods">
+                        <a rel="noreferrer" href="mailto:cardozo27cv@gmail.com" class="contact-card contact-card--navy">
+                            <span class="contact-card__icon"><i class="fa fa-envelope" aria-hidden="true"></i></span>
+                            <span class="contact-card__body">
+                                <span class="contact-card__label">Email</span>
+                                <span class="contact-card__value">cardozo27cv@gmail.com</span>
+                            </span>
+                        </a>
+                        <a rel="noopener noreferrer" href="https://wa.me/002389277945" target="_blank" class="contact-card contact-card--orange">
+                            <span class="contact-card__icon"><i class="fa fa-whatsapp" aria-hidden="true"></i></span>
+                            <span class="contact-card__body">
+                                <span class="contact-card__label">WhatsApp</span>
+                                <span class="contact-card__value">+238 927 7945</span>
+                            </span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -1287,24 +1142,24 @@
                     <ul id="general-social-links-footer">
                         <li>
                             <a href="https://scholar.google.com/citations?hl=pt-PT&user=6oTDewQAAAAJ" target="_blank"
-                                alt="Scholar" rel="noreferrer">
-                                <i class="ai ai-google-scholar-square ai-1.5x"></i>
+                                rel="noopener noreferrer" aria-label="Google Scholar">
+                                <i class="fa fa-graduation-cap"></i>
                             </a>
 
                         </li>
                         <li>
-                            <a rel="noreferrer" href="https://www.instagram.com/cardozomariocv/" target="_blank" alt="Instagram">
+                            <a rel="noopener noreferrer" href="https://www.instagram.com/cardozomariocv/" target="_blank" aria-label="Instagram">
                                 <i class="fa fa-instagram"></i>
                             </a>
                         </li>
                         <li>
-                            <a rel="noreferrer" href="https://www.linkedin.com/in/m%C3%A1rio-cardoso-84481772/"
-                                target="_blank" alt="Linkedin">
+                            <a rel="noopener noreferrer" href="https://www.linkedin.com/in/m%C3%A1rio-cardoso-84481772/"
+                                target="_blank" aria-label="LinkedIn">
                                 <i class="fa fa-linkedin"></i>
                             </a>
                         </li>
                         <li>
-                            <a rel="noreferrer" href="https://github.com/marovski" target="_blank" alt="GitHub">
+                            <a rel="noopener noreferrer" href="https://github.com/marovski" target="_blank" aria-label="GitHub">
                                 <i class="fa fa-github"></i>
                             </a>
                         </li>
@@ -1316,22 +1171,17 @@
         </div>
     </div>
     <!-- Javascript Files Needed -->
-    <!-- jQuery -->
-    <!-- Global site tag (gtag.js) - Google Analytics -->
- 
-    <script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
     <script src="js/scripts.js" type="text/javascript" charset="utf-8"></script>
-
-</body>
-<script type="module">
-    if ('serviceWorker' in navigator) {
-        try {
-            await navigator.serviceWorker.register('sw.js');
-            console.log("Service worker registered successfully");
-        } catch (err) {
-            console.log("Service worker registration failed: ", err);
+    <script type="module">
+        if ('serviceWorker' in navigator) {
+            try {
+                await navigator.serviceWorker.register('sw.js');
+                console.log("Service worker registered successfully");
+            } catch (err) {
+                console.log("Service worker registration failed: ", err);
+            }
         }
-    }
-</script>
+    </script>
+</body>
 
 </html>
